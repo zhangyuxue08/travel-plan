@@ -1,0 +1,38 @@
+.DS_Store
+._*
+__MACOSX/
+
+# Dependencies and package manager caches
+node_modules/
+.npm/
+.pnpm-store/
+
+# Local environment and secrets
+.env
+.env.*
+.dev.vars
+*.pem
+*.key
+*.p12
+
+# Local preview, build, and deployment state
+.wrangler/
+.local-preview-data.json
+dist/
+build/
+coverage/
+*.log
+
+# Python/editor caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.vscode/
+.idea/
+
+# Private source material
+source-files/
+private/
+source-facts.json
+reports/private/

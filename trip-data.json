@@ -1,0 +1,6661 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "todo": true,
+      "driving": true,
+      "ledger": true
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "new-zealand-2026-national-day",
+    "title": "2026 国庆新西兰南岛自驾旅行",
+    "language": "zh-CN",
+    "timeZone": "Pacific/Auckland",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-06-upland-basin.webp",
+        "assets/maps/templates/template-10-broad-riverland.webp"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-09-25",
+    "endDate": "2026-10-07",
+    "dayCount": 13,
+    "nightCountAway": 12,
+    "countries": [
+      {
+        "code": "NZ",
+        "name": "New Zealand",
+        "nameZh": "新西兰",
+        "nameEn": "New Zealand"
+      },
+      {
+        "code": "SG",
+        "name": "Singapore",
+        "nameZh": "新加坡",
+        "nameEn": "Singapore"
+      }
+    ],
+    "primaryDestinationCountries": [
+      "NZ"
+    ],
+    "primaryDestinationName": "新西兰南岛",
+    "primaryDestinationNameEn": "New Zealand South Island",
+    "heroTitle": "新西兰南岛",
+    "heroEyebrow": "New Zealand South Island",
+    "citiesAndAreas": [
+      "Singapore",
+      "Christchurch",
+      "Timaru",
+      "Oamaru",
+      "Dunedin",
+      "Queenstown",
+      "Wanaka",
+      "Aoraki / Mount Cook",
+      "Lake Tekapo"
+    ],
+    "routeSummary": "上海 → 新加坡 → 基督城 → Timaru → Oamaru → Dunedin → Queenstown → Wanaka → Aoraki / Mount Cook → Lake Tekapo → 基督城 → 新加坡 → 上海",
+    "groupSize": null
+  },
+  "flightJourneys": [
+    {
+      "id": "journey-shanghai-singapore",
+      "title": "上海 → 新加坡"
+    },
+    {
+      "id": "journey-singapore-christchurch",
+      "title": "新加坡 → 基督城"
+    },
+    {
+      "id": "journey-christchurch-shanghai",
+      "title": "基督城 → 新加坡 → 上海"
+    }
+  ],
+  "flights": [
+    {
+      "id": "flight-sq831",
+      "journeyId": "journey-shanghai-singapore",
+      "sequence": 1,
+      "airline": {
+        "name": "Singapore Airlines",
+        "nameZh": "新加坡航空"
+      },
+      "flightNumber": "SQ831",
+      "departure": {
+        "airportCode": "PVG",
+        "city": "上海",
+        "date": "2026-09-25",
+        "time": "14:30",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "SIN",
+        "city": "新加坡",
+        "date": "2026-09-25",
+        "time": "20:20",
+        "utcOffset": "+08:00"
+      }
+    },
+    {
+      "id": "flight-sq297",
+      "journeyId": "journey-singapore-christchurch",
+      "sequence": 1,
+      "airline": {
+        "name": "Singapore Airlines",
+        "nameZh": "新加坡航空"
+      },
+      "flightNumber": "SQ297",
+      "departure": {
+        "airportCode": "SIN",
+        "city": "新加坡",
+        "date": "2026-09-26",
+        "time": "19:50",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "CHC",
+        "city": "基督城",
+        "date": "2026-09-27",
+        "time": "10:30",
+        "utcOffset": "+13:00"
+      }
+    },
+    {
+      "id": "flight-sq298",
+      "journeyId": "journey-christchurch-shanghai",
+      "sequence": 1,
+      "airline": {
+        "name": "Singapore Airlines",
+        "nameZh": "新加坡航空"
+      },
+      "flightNumber": "SQ298",
+      "departure": {
+        "airportCode": "CHC",
+        "city": "基督城",
+        "date": "2026-10-06",
+        "time": "11:50",
+        "utcOffset": "+13:00"
+      },
+      "arrival": {
+        "airportCode": "SIN",
+        "city": "新加坡",
+        "date": "2026-10-06",
+        "time": "17:40",
+        "utcOffset": "+08:00"
+      }
+    },
+    {
+      "id": "flight-sq826",
+      "journeyId": "journey-christchurch-shanghai",
+      "sequence": 2,
+      "airline": {
+        "name": "Singapore Airlines",
+        "nameZh": "新加坡航空"
+      },
+      "flightNumber": "SQ826",
+      "departure": {
+        "airportCode": "SIN",
+        "city": "新加坡",
+        "date": "2026-10-07",
+        "time": "01:15",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "PVG",
+        "city": "上海",
+        "date": "2026-10-07",
+        "time": "06:35",
+        "utcOffset": "+08:00"
+      },
+      "connectionFromPrevious": {
+        "plannedDurationText": "新加坡转机约 7 小时 35 分"
+      }
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "stay-singapore",
+      "name": "Ibis Singapore on Bencoolen",
+      "checkIn": "2026-09-25",
+      "checkOut": "2026-09-26",
+      "address": "170 Bencoolen St, 189657, Singapore"
+    },
+    {
+      "id": "stay-timaru",
+      "name": "Jellicoe 度假屋",
+      "checkIn": "2026-09-27",
+      "checkOut": "2026-09-28",
+      "address": "34D Jellicoe Street, Timaru, Canterbury Region 7910"
+    },
+    {
+      "id": "stay-dunedin",
+      "name": "Sea Salt B&B",
+      "checkIn": "2026-09-28",
+      "checkOut": "2026-09-29",
+      "address": "18A Motu Street, Dunedin, Otago 9012"
+    },
+    {
+      "id": "stay-queenstown",
+      "name": "Tina Maria",
+      "checkIn": "2026-09-29",
+      "checkOut": "2026-10-02",
+      "address": "13 Poole Lane, Queenstown, Otago Region 9300"
+    },
+    {
+      "id": "stay-wanaka",
+      "name": "Wanaka 住宿",
+      "checkIn": "2026-10-02",
+      "checkOut": "2026-10-03",
+      "address": "34A Packer Road, Wānaka, Otago Region 9382"
+    },
+    {
+      "id": "stay-twizel",
+      "name": "Twizel 住宿",
+      "checkIn": "2026-10-03",
+      "checkOut": "2026-10-04",
+      "address": "35 Tasman Road, Twizel, Canterbury Region 7901"
+    },
+    {
+      "id": "stay-tekapo",
+      "name": "Lake Tekapo 住宿",
+      "checkIn": "2026-10-04",
+      "checkOut": "2026-10-05",
+      "address": "64 Murray Place, Lake Tekapo, Canterbury 7999"
+    },
+    {
+      "id": "stay-christchurch",
+      "name": "Christchurch 住宿",
+      "checkIn": "2026-10-05",
+      "checkOut": "2026-10-06",
+      "address": "25 Carradale Avenue, Christchurch, Canterbury 8042"
+    }
+  ],
+  "groundTransport": {
+    "rentalCar": {
+      "company": "RaD Car Hire Christchurch",
+      "bookingNumber": "",
+      "rentalPeriodDays": 9,
+      "vehicle": {
+        "example": "2025 Toyota Rav4 Hybrid AWD",
+        "class": "SUV / Hybrid AWD"
+      },
+      "unlimitedKilometers": true,
+      "price": {
+        "currency": "NZD",
+        "payAtCounter": 1230
+      },
+      "insurance": [
+        "Gold Cover：$0 Excess Liability / Windscreen Liability $0",
+        "Tyres and punctures coverage included in booking",
+        "Airport shuttle fee included"
+      ],
+      "pickup": {
+        "date": "2026-09-27",
+        "time": "11:00",
+        "location": "Christchurch Airport Depot",
+        "address": "8 Sir Keith Park Place, Mustang Park, Harewood",
+        "utcOffset": "+13:00"
+      },
+      "dropoff": {
+        "date": "2026-10-06",
+        "time": "09:00",
+        "timeZoneLabel": "New Zealand daylight time",
+        "vehicleReturnPoint": "Christchurch Airport Depot, 8 Sir Keith Park Place",
+        "deadlineWarning": "预订 09:00 还车；建议 08:30 前抵达机场区域，预留还车、接驳、托运和安检时间。",
+        "recommendedArrivalTime": "08:30",
+        "utcOffset": "+13:00"
+      }
+    },
+    "rentalChecklist": [
+      "抵达机场后致电 03 348 3749 或 0800 73 68 23，前往 Regional Departures 1、2 号门外等待接驳。",
+      "取车时准备驾照原件、NZTA 认证翻译件或小白本、主驾驶信用卡、提车单。",
+      "绕车一周拍照，重点记录车身划痕、轮胎、油表读数、备胎和警示设备。",
+      "满油取车，按订单要求还车前加满油。",
+      "若非营业时间取还车，可能产生 NZD 40 after-hours fee。"
+    ],
+    "drivingNotes": [
+      "新西兰靠左行驶，刚取车先在机场附近慢速适应右舵、转向灯和雨刷位置。",
+      "进入环岛前让行右侧车辆，看到 Give Way 标志务必减速观察。",
+      "长途日不贪多，优先保证白天驾驶。",
+      "用 Waze 看限速和测速提醒，用 Google Maps 导航餐厅、景点和停车场，用 Gaspy 查油价。"
+    ],
+    "drivingReferenceLinks": [
+      {
+        "label": "Drive Safe New Zealand",
+        "url": "http://www.drivesafe.org.nz/"
+      },
+      {
+        "label": "RaD Car Hire Terms",
+        "url": "http://www.radcarhire.co.nz/terms-conditions/"
+      }
+    ],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": []
+  },
+  "days": [
+    {
+      "id": "day-01",
+      "day": 1,
+      "date": "2026-09-25",
+      "sourceDateLabel": "9月25日",
+      "title": "上海出发，经新加坡入境",
+      "locations": [
+        "上海",
+        "新加坡"
+      ],
+      "schedule": [
+        {
+          "id": "d01-01",
+          "time": "12:30",
+          "type": "flight",
+          "title": "上海浦东 T2",
+          "subtitle": "抵达机场",
+          "icon": "✈️",
+          "displayCategory": "traffic",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "预留值机、安检、午餐时间",
+          "reserved": false,
+          "text": "抵达机场｜上海浦东 T2；预留值机、安检、午餐时间",
+          "placeId": "上海浦东-t2"
+        },
+        {
+          "id": "d01-02",
+          "time": "14:30",
+          "type": "flight",
+          "title": "SQ831 上海浦东 T2 → 新加坡樟宜",
+          "subtitle": "飞新加坡",
+          "icon": "✈️",
+          "displayCategory": "traffic",
+          "routeDuration": "约5H50",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "新加坡航空；20:20 抵达新加坡樟宜",
+          "reserved": false,
+          "text": "飞新加坡｜SQ831 上海浦东 T2 → 新加坡樟宜；约5H50；新加坡航空；20:20 抵达新加坡樟宜"
+        },
+        {
+          "id": "d01-03",
+          "time": "20:20",
+          "type": "attraction",
+          "title": "新加坡樟宜",
+          "subtitle": "落地新加坡",
+          "icon": "✈️",
+          "displayCategory": "traffic",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "入境、取行李（免签）\n✈️入境前准备\n1. 提前三天填写入境卡\n2. 下载Grab, 打车使用\n3. 手机开通漫游\n4. Visa, 有备无患",
+          "reserved": false,
+          "text": "落地新加坡｜新加坡樟宜；入境、取行李（免签）\n✈️入境前准备\n1. 提前三天填写入境卡\n2. 下载Grab, 打车使用\n3. 手机开通漫游\n4. Visa, 有备无患",
+          "placeId": "新加坡樟宜"
+        },
+        {
+          "id": "d01-04",
+          "time": "21:15",
+          "type": "transfer",
+          "title": "Changi → Bencoolen",
+          "subtitle": "去酒店",
+          "icon": "🛏",
+          "displayCategory": "traffic",
+          "routeDuration": "约50min",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "去酒店｜Changi → Bencoolen；约50min"
+        },
+        {
+          "id": "d01-05",
+          "time": "22:00",
+          "type": "check-in",
+          "title": "Ibis Singapore on Bencoolen",
+          "subtitle": "入住新加坡",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "1355",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "15:00 后可入住；酒店地址：170 Bencoolen St, 189657, Singapore",
+          "reserved": false,
+          "text": "入住新加坡｜Ibis Singapore on Bencoolen；15:00 后可入住；酒店地址：170 Bencoolen St, 189657, Singapore",
+          "placeId": "ibis-singapore-on-bencoolen"
+        }
+      ],
+      "notes": [
+        "住宿：Ibis Singapore on Bencoolen"
+      ],
+      "costReferences": [
+        {
+          "item": "入住新加坡",
+          "currency": "原表",
+          "amount": "RMB 1355"
+        }
+      ]
+    },
+    {
+      "id": "day-02",
+      "day": 2,
+      "date": "2026-09-26",
+      "sourceDateLabel": "9月26日",
+      "title": "新加坡 City Walk，夜航前往基督城",
+      "locations": [
+        "新加坡市区",
+        "樟宜机场",
+        "基督城夜航"
+      ],
+      "schedule": [
+        {
+          "id": "d02-01",
+          "time": "10:00",
+          "type": "check-out",
+          "title": "Ibis Singapore on Bencoolen",
+          "subtitle": "退房寄存行李",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "酒店不含早餐，我们可外出吃；11:00 前退房；可用免费行李寄存",
+          "reserved": false,
+          "text": "退房寄存行李｜Ibis Singapore on Bencoolen；酒店不含早餐，我们可外出吃；11:00 前退房；可用免费行李寄存",
+          "placeId": "ibis-singapore-on-bencoolen"
+        },
+        {
+          "id": "d02-02",
+          "time": "待定",
+          "type": "restaurant",
+          "title": "亚坤Kaya Toast",
+          "subtitle": "早餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "约🚶2min",
+          "itemDuration": "停留1H，11:00出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "吐司烤得焦脆,咖椰酱甜而不腻,配生熟蛋和酱油蘸着吃,豆浆咖啡不错",
+          "reserved": false,
+          "text": "🍔早餐｜亚坤Kaya Toast；约🚶2min；停留1H，11:00出发；吐司烤得焦脆,咖椰酱甜而不腻,配生熟蛋和酱油蘸着吃,豆浆咖啡不错",
+          "placeId": "亚坤kaya-toast"
+        },
+        {
+          "id": "d02-03",
+          "time": "11:30",
+          "type": "attraction",
+          "title": "鱼尾狮公园",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚶30min",
+          "itemDuration": "停留30min，12:00出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "地标性建筑",
+          "reserved": false,
+          "text": "👀参观｜鱼尾狮公园；约🚶30min；停留30min，12:00出发；地标性建筑",
+          "placeId": "鱼尾狮公园"
+        },
+        {
+          "id": "d02-04",
+          "time": "12:10",
+          "type": "attraction",
+          "title": "新加坡国家美术馆",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚶8min",
+          "itemDuration": "停留20min，12:30出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "颜值很高的博物馆，里面可以接水",
+          "reserved": false,
+          "text": "👀参观｜新加坡国家美术馆；约🚶8min；停留20min，12:30出发；颜值很高的博物馆，里面可以接水",
+          "placeId": "新加坡国家美术馆"
+        },
+        {
+          "id": "d02-05",
+          "time": "12:30",
+          "type": "restaurant",
+          "title": "娘惹餐厅",
+          "subtitle": "午餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "约🚶2min",
+          "itemDuration": "停留1.5H，14:00出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "国家美术馆 National Gallery Singapore\n馆内娘惹餐厅National Kitchen by Violet Oon（提前预定！（12:00-17:00/18:00-22:30）",
+          "reserved": true,
+          "text": "🍔午餐｜娘惹餐厅；约🚶2min；停留1.5H，14:00出发；国家美术馆 National Gallery Singapore\n馆内娘惹餐厅National Kitchen by Violet Oon（提前预定！（12:00-17:00/18:00-22:30）",
+          "placeId": "娘惹餐厅"
+        },
+        {
+          "id": "d02-06",
+          "time": "14:10",
+          "type": "attraction",
+          "title": "旧禧街彩虹警察局",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚶8min",
+          "itemDuration": "停留10min，14:20出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "打卡彩色大楼🎨",
+          "reserved": false,
+          "text": "👀参观｜旧禧街彩虹警察局；约🚶8min；停留10min，14:20出发；打卡彩色大楼🎨",
+          "placeId": "旧禧街彩虹警察局"
+        },
+        {
+          "id": "d02-07",
+          "time": "14:25",
+          "type": "attraction",
+          "title": "克拉码头",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚶3min",
+          "itemDuration": "停留10min，14:35出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "河畔边就是多巴胺建筑群⛲️",
+          "reserved": false,
+          "text": "👀参观｜克拉码头；约🚶3min；停留10min，14:35出发；河畔边就是多巴胺建筑群⛲️",
+          "placeId": "克拉码头"
+        },
+        {
+          "id": "d02-08",
+          "time": "14:50",
+          "type": "attraction",
+          "title": "福康宁公园绿地",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚶15min",
+          "itemDuration": "停留15min，15:05出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "👀参观｜福康宁公园绿地；约🚶15min；停留15min，15:05出发",
+          "placeId": "福康宁公园绿地"
+        },
+        {
+          "id": "d02-09",
+          "time": "15:10",
+          "type": "attraction",
+          "title": "福康宁公园树洞",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚶5min",
+          "itemDuration": "停留15min，15:25出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "打卡树洞🌳机位，拍照超级出片！就是人很多，旁边的通道也好看",
+          "reserved": false,
+          "text": "👀参观｜福康宁公园树洞；约🚶5min；停留15min，15:25出发；打卡树洞🌳机位，拍照超级出片！就是人很多，旁边的通道也好看",
+          "placeId": "福康宁公园树洞"
+        },
+        {
+          "id": "d02-10",
+          "time": "15:40",
+          "type": "attraction",
+          "title": "Ibis Singapore on Bencoolen",
+          "subtitle": "取行李",
+          "icon": "✈️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚶15min",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "预留去机场和晚餐时间",
+          "reserved": false,
+          "text": "取行李｜Ibis Singapore on Bencoolen；约🚶15min；预留去机场和晚餐时间",
+          "placeId": "ibis-singapore-on-bencoolen"
+        },
+        {
+          "id": "d02-11",
+          "time": "16:00",
+          "type": "flight",
+          "title": "Ibis → 新加坡樟宜 T3",
+          "subtitle": "去机场",
+          "icon": "✈️",
+          "displayCategory": "traffic",
+          "routeDuration": "约50min",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "建议早点到机场，晚餐和休息都放在机场完成",
+          "reserved": false,
+          "text": "🚇去机场｜Ibis → 新加坡樟宜 T3；约50min；建议早点到机场，晚餐和休息都放在机场完成"
+        },
+        {
+          "id": "d02-12",
+          "time": "17:00",
+          "type": "restaurant",
+          "title": "新加坡樟宜 T3",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "traffic",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "在机场晚餐",
+          "reserved": false,
+          "text": "🍔晚餐｜新加坡樟宜 T3；在机场晚餐",
+          "placeId": "新加坡樟宜-t3"
+        },
+        {
+          "id": "d02-13",
+          "time": "待定",
+          "type": "restaurant",
+          "title": "樟宜机场Jewel",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "traffic",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "「TODO」Tambuah Mas：位于Jewel三楼的印尼餐厅，是家米其林推荐（如果没时间去JEWEL，就没法吃了）",
+          "reserved": false,
+          "text": "🍔晚餐｜樟宜机场Jewel；「TODO」Tambuah Mas：位于Jewel三楼的印尼餐厅，是家米其林推荐（如果没时间去JEWEL，就没法吃了）",
+          "placeId": "樟宜机场jewel"
+        },
+        {
+          "id": "d02-14",
+          "time": "19:50",
+          "type": "flight",
+          "title": "SQ297 新加坡樟宜 T3 → 基督城",
+          "subtitle": "飞基督城",
+          "icon": "✈️",
+          "displayCategory": "traffic",
+          "routeDuration": "约14H40",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "10:30+1 抵达基督城国际机场",
+          "reserved": false,
+          "text": "飞基督城｜SQ297 新加坡樟宜 T3 → 基督城；约14H40；10:30+1 抵达基督城国际机场"
+        }
+      ],
+      "notes": [
+        "住宿：机上"
+      ],
+      "costReferences": []
+    },
+    {
+      "id": "day-03",
+      "day": 3,
+      "date": "2026-09-27",
+      "sourceDateLabel": "9月27日",
+      "title": "抵达基督城，取车后前往 Timaru",
+      "locations": [
+        "基督城",
+        "Wigram",
+        "Timaru"
+      ],
+      "schedule": [
+        {
+          "id": "d03-01",
+          "time": "10:30",
+          "type": "attraction",
+          "title": "基督城",
+          "subtitle": "Christchurch Airport",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "停留约2H，12:30出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "入境、取行李",
+          "reserved": false,
+          "text": "Christchurch Airport｜基督城；停留约2H，12:30出发；入境、取行李",
+          "placeId": "基督城"
+        },
+        {
+          "id": "d03-02",
+          "time": "待定",
+          "type": "drive",
+          "title": "机场后，请直接致电： 🔸 03 348 3749 🔸 免费电话：0800 73 68 23 接驳车上车点位于机场航站楼的 Regional Departures 区域航班出发区一端，1号门和2号门外。",
+          "subtitle": "取车",
+          "icon": "🚗",
+          "displayCategory": "traffic",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "1230",
+            "usd": ""
+          },
+          "note": "必备证件：\n🔸驾照原件：中国内地有效驾照。\n🔸官方翻译件：NZTA认证新西兰驾照翻译件，或者小白本（记得贴照片）\n🔸信用卡：主驾驶员名下的国际信用卡，用于支付押金\n🔸提车单\n保险：\n🔸可以现场升级全险，直接从租车公司购买，出了事故以后不用自己垫付，交给租车公司即可，省心省力\n油价：\n🔸还车时一般分为【满油还车】与【空油还车】两种，租车行一般会推荐后者，直接在基督城预付一箱油，因为基督城的油价更便宜\n车辆检查：\n🔸绕车一周拍照：重点拍摄车身划痕、轮胎状况、油表读数（保留证据避免纠纷）；\n🔸确认设备：检查备胎、三角警示牌、急救包是否齐全\n驾驶与Tips：\n🔸靠左行驶：首次右舵驾驶需要适应，机场至市区路段缓慢练习半小时即可上手，尤其是方向灯和雨刷的位置不要搞反\n🔸环岛规则：进入环岛时让行右侧车辆，无车时才可以通过，不过好在新西兰的人们开车都很守规矩，注意give way路牌即可\n🔸提前准备好黑布，盖住行李箱\n🔸Waze：实时显示限速、测速摄像头及警察位置\n🔸G Maps：精准定位餐厅、加油站\n🔸Gaspy：查询全网约油价，自助加油更省钱。",
+          "reserved": false,
+          "text": "取车｜机场后，请直接致电： 🔸 03 348 3749 🔸 免费电话：0800 73 68 23 接驳车上车点位于机场航站楼的 Regional Departures 区域航班出发区一端，1号门和2号门外。；必备证件：\n🔸驾照原件：中国内地有效驾照。\n🔸官方翻译件：NZTA认证新西兰驾照翻译件，或者小白本（记得贴照片）\n🔸信用卡：主驾驶员名下的国际信用卡，用于支付押金\n🔸提车单\n保险：\n🔸可以现场升级全险，直接从租车公司购买，出了事故以后不用自己垫付，交给租车公司即可，省心省力\n油价：\n🔸还车时一般分为【满油还车】与【空油还车】两种，租车行一般会推荐后者，直接在基督城预付一箱油，因为基督城的油价更便宜\n车辆检查：\n🔸绕车一周拍照：重点拍摄车身划痕、轮胎状况、油表读数（保留证据避免纠纷）；\n🔸确认设备：检查备胎、三角警示牌、急救包是否齐全\n驾驶与Tips：\n🔸靠左行驶：首次右舵驾驶需要适应，机场至市区路段缓慢练习半小时即可上手，尤其是方向灯和雨刷的位置不要搞反\n🔸环岛规则：进入环岛时让行右侧车辆，无车时才可以通过，不过好在新西兰的人们开车都很守规矩，注意give way路牌即可\n🔸提前准备好黑布，盖住行李箱\n🔸Waze：实时显示限速、测速摄像头及警察位置\n🔸G Maps：精准定位餐厅、加油站\n🔸Gaspy：查询全网约油价，自助加油更省钱。"
+        },
+        {
+          "id": "d03-03",
+          "time": "12:50",
+          "type": "drive",
+          "title": "Sunson Asian Food Market (Wigram) 停车场",
+          "subtitle": "停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗20min",
+          "itemDuration": "",
+          "navigationQuery": "Sunson Asian Food Market (Wigram)",
+          "navigationLabel": "Sunson Asian Food Market (Wigram)",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "调研停车问题",
+          "reserved": false,
+          "text": "🅿️停车场｜Sunson Asian Food Market (Wigram) 停车场；约🚗20min；调研停车问题",
+          "placeId": "sunson-asian-food-market-wigram-停车场",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d03-04",
+          "time": "13:00",
+          "type": "restaurant",
+          "title": "晋丰小馆 Best Wok Restaurant",
+          "subtitle": "午餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "约🚶11min",
+          "itemDuration": "停留约1H，14:00出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "午餐可以再选一选，就在Wigram附近可以看看",
+          "reserved": false,
+          "text": "🍔午餐｜晋丰小馆 Best Wok Restaurant；约🚶11min；停留约1H，14:00出发；午餐可以再选一选，就在Wigram附近可以看看",
+          "placeId": "晋丰小馆-best-wok-restaurant"
+        },
+        {
+          "id": "d03-05",
+          "time": "14:10",
+          "type": "attraction",
+          "title": "Sunson Asian Food Market (Wigram)",
+          "subtitle": "采购",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚶11min",
+          "itemDuration": "停留约1H，15:10出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "采购水、零食、泡面等",
+          "reserved": false,
+          "text": "🛒采购｜Sunson Asian Food Market (Wigram)；约🚶11min；停留约1H，15:10出发；采购水、零食、泡面等",
+          "placeId": "sunson-asian-food-market-wigram"
+        },
+        {
+          "id": "d03-06",
+          "time": "17:30",
+          "type": "check-in",
+          "title": "Jellicoe度假屋",
+          "subtitle": "入住 Timaru",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "约🚗 2H",
+          "itemDuration": "",
+          "navigationQuery": "34D Jellicoe Street, Timaru, Canterbury Region 7910",
+          "navigationLabel": "34D Jellicoe Street, Timaru, Canterbury Region 7910",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "check in",
+          "reserved": false,
+          "text": "入住 Timaru｜Jellicoe度假屋；约🚗 2H；check in",
+          "placeId": "jellicoe度假屋",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d03-07",
+          "time": "17:40",
+          "type": "drive",
+          "title": "Public parking",
+          "subtitle": "停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗7min",
+          "itemDuration": "",
+          "navigationQuery": "State Highway 78, Timaru Port, Timaru 7910新西兰",
+          "navigationLabel": "State Highway 78, Timaru Port, Timaru 7910新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "🅿️停车场｜Public parking；约🚗7min",
+          "placeId": "public-parking",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d03-08",
+          "time": "17:50",
+          "type": "restaurant",
+          "title": "Sukhothai Thai Restaurant & Bar",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "约🚶8min",
+          "itemDuration": "停留1.5H，20:30出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "未确定\n1、Sukhothai Thai Restaurant & Bar （离小企鹅很近）",
+          "reserved": false,
+          "text": "🍔晚餐｜Sukhothai Thai Restaurant & Bar；约🚶8min；停留1.5H，20:30出发；未确定\n1、Sukhothai Thai Restaurant & Bar （离小企鹅很近）",
+          "placeId": "sukhothai-thai-restaurant-bar"
+        },
+        {
+          "id": "d03-09",
+          "time": "20:45",
+          "type": "attraction",
+          "title": "timaru little blue penguins",
+          "subtitle": "Timaru 小蓝企鹅",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚶15min",
+          "itemDuration": "停留30min，21:00出发",
+          "navigationQuery": "timaru little blue penguins",
+          "navigationLabel": "timaru little blue penguins",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "可选（听说是22:00能看到小企鹅，需要再看看攻略）；99号岩石能看到；9pm到就可以，太早小企鹅没回家（我就是来太早了），一般九点半左右有更多的企鹅出现。",
+          "reserved": false,
+          "text": "Timaru 小蓝企鹅｜timaru little blue penguins；约🚶15min；停留30min，21:00出发；可选（听说是22:00能看到小企鹅，需要再看看攻略）；99号岩石能看到；9pm到就可以，太早小企鹅没回家（我就是来太早了），一般九点半左右有更多的企鹅出现。",
+          "placeId": "timaru-little-blue-penguins",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d03-10",
+          "time": "21:40",
+          "type": "check-in",
+          "title": "Jellicoe度假屋",
+          "subtitle": "休息",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "1575",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "😴休息｜Jellicoe度假屋",
+          "placeId": "jellicoe度假屋"
+        }
+      ],
+      "notes": [
+        "住宿：34D Jellicoe Street, Timaru, Canterbury Region 7910"
+      ],
+      "costReferences": [
+        {
+          "item": "取车",
+          "currency": "原表",
+          "amount": "NZD 1230"
+        },
+        {
+          "item": "😴休息",
+          "currency": "原表",
+          "amount": "RMB 1575"
+        }
+      ]
+    },
+    {
+      "id": "day-04",
+      "day": 4,
+      "date": "2026-09-28",
+      "sourceDateLabel": "9月28日",
+      "title": "Timaru - Oamaru - Dunedin 海岸线",
+      "locations": [
+        "Timaru",
+        "Oamaru",
+        "Dunedin"
+      ],
+      "schedule": [
+        {
+          "id": "d04-01",
+          "time": "09:30",
+          "type": "restaurant",
+          "title": "Jellicoe度假屋",
+          "subtitle": "早餐后出发",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "不赶早",
+          "reserved": false,
+          "text": "早餐后出发｜Jellicoe度假屋；不赶早",
+          "placeId": "jellicoe度假屋"
+        },
+        {
+          "id": "d04-02",
+          "time": "09:45",
+          "type": "attraction",
+          "title": "Real Milk Timaru",
+          "subtitle": "",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗15min",
+          "itemDuration": "停留15min，10:00出发",
+          "navigationQuery": "Real Milk Timaru",
+          "navigationLabel": "Real Milk Timaru",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "\"4🔪一升，牛奶很火（自助鲜奶站）\n💗 去之前一定要准备好至少能装1升奶的容器，如果你没带容器，旁边有个自助售卖机会卖玻璃瓶，可以现场购买\n💗 如果是自己带瓶子的，记得把瓶子清洗好，因为牛奶会直接往里灌。\n💗 准备硬币零钱，机器上不能刷卡\n💗 这个牛奶最好还是加热一下喝比较安全",
+          "reserved": false,
+          "text": "🥛 Real Milk Timaru｜Real Milk Timaru；约🚗15min；停留15min，10:00出发；\"4🔪一升，牛奶很火（自助鲜奶站）\n💗 去之前一定要准备好至少能装1升奶的容器，如果你没带容器，旁边有个自助售卖机会卖玻璃瓶，可以现场购买\n💗 如果是自己带瓶子的，记得把瓶子清洗好，因为牛奶会直接往里灌。\n💗 准备硬币零钱，机器上不能刷卡\n💗 这个牛奶最好还是加热一下喝比较安全",
+          "placeId": "real-milk-timaru",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-03",
+          "time": "11:10",
+          "type": "drive",
+          "title": "蒸汽朋克博物馆 Steampunk HQ",
+          "subtitle": "参观 & 🅿️停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗 1H 10min",
+          "itemDuration": "停留30min",
+          "navigationQuery": "1 Humber Street, Oamaru 9400新西兰",
+          "navigationLabel": "1 Humber Street, Oamaru 9400新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "门口有免费的限时停车位，1小时内免费。博物馆很小啊，3间教室大，就一层（注意停车场",
+          "reserved": false,
+          "text": "👀参观 & 🅿️停车场｜蒸汽朋克博物馆 Steampunk HQ；约🚗 1H 10min；停留30min；门口有免费的限时停车位，1小时内免费。博物馆很小啊，3间教室大，就一层（注意停车场",
+          "placeId": "蒸汽朋克博物馆-steampunk-hq",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-04",
+          "time": "11:40",
+          "type": "attraction",
+          "title": "维多利亚遗迹区 Oamaru's Heritage Precinct",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚶1min",
+          "itemDuration": "停留10min，11:50出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "维多利亚遗迹区就在博物馆隔一条火车轨道",
+          "reserved": false,
+          "text": "👀参观｜维多利亚遗迹区 Oamaru's Heritage Precinct；约🚶1min；停留10min，11:50出发；维多利亚遗迹区就在博物馆隔一条火车轨道",
+          "placeId": "维多利亚遗迹区-oamaru-s-heritage-precinct"
+        },
+        {
+          "id": "d04-05",
+          "time": "12:00",
+          "type": "restaurant",
+          "title": "Star and Garter Restaurant",
+          "subtitle": "午餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "停留1H",
+          "navigationQuery": "Star and Garter Restaurant",
+          "navigationLabel": "Star and Garter Restaurant",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": true,
+          "text": "🍔午餐｜Star and Garter Restaurant；停留1H",
+          "placeId": "star-and-garter-restaurant",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-06",
+          "time": "13:10",
+          "type": "drive",
+          "title": "Harbourside Car Park",
+          "subtitle": "参观 & 🅿️停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗1min",
+          "itemDuration": "停留20min，13:30出发",
+          "navigationQuery": "Harbourside Car Park",
+          "navigationLabel": "Harbourside Car Park",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "免费停车场，看看海边",
+          "reserved": false,
+          "text": "👀参观 & 🅿️停车场｜Harbourside Car Park；约🚗1min；停留20min，13:30出发；免费停车场，看看海边",
+          "placeId": "harbourside-car-park",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-07",
+          "time": "13:40",
+          "type": "attraction",
+          "title": "Oamaru Lookout Point",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗3min",
+          "itemDuration": "停留20min，14:00出发",
+          "navigationQuery": "Oamaru Lookout Point",
+          "navigationLabel": "Oamaru Lookout Point",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "免费停车场，可以俯瞰海滩和整个城市",
+          "reserved": false,
+          "text": "👀参观｜Oamaru Lookout Point；约🚗3min；停留20min，14:00出发；免费停车场，可以俯瞰海滩和整个城市",
+          "placeId": "oamaru-lookout-point",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-08",
+          "time": "14:40",
+          "type": "attraction",
+          "title": "Katiki Point Lighthouse",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗 40min",
+          "itemDuration": "停留1H，15:40出发",
+          "navigationQuery": "Katiki Point Lighthouse",
+          "navigationLabel": "Katiki Point Lighthouse",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "车停在灯塔旁的小停车场，徒步10分钟到海边\n最佳时间：清晨或黄昏，既能看企鹅归巢，又能拍灯塔在金色阳光里的模样。（没办法，只是路过）\n✅风景绝佳\n✅海狮观看距离近，很多在草坪上睡觉\n✅步行距离短且好走\n✅💡💡有机会看到黄眼企鹅",
+          "reserved": false,
+          "text": "👀参观｜Katiki Point Lighthouse；约🚗 40min；停留1H，15:40出发；车停在灯塔旁的小停车场，徒步10分钟到海边\n最佳时间：清晨或黄昏，既能看企鹅归巢，又能拍灯塔在金色阳光里的模样。（没办法，只是路过）\n✅风景绝佳\n✅海狮观看距离近，很多在草坪上睡觉\n✅步行距离短且好走\n✅💡💡有机会看到黄眼企鹅",
+          "placeId": "katiki-point-lighthouse",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-09",
+          "time": "17:00",
+          "type": "attraction",
+          "title": "Sandfly Bay",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗 1H 20min",
+          "itemDuration": "停留1H，18:30出发",
+          "navigationQuery": "Seal Point Road",
+          "navigationLabel": "Seal Point Road",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "（给前面的行程留0.5H buffer，担心来不及） 蓝天、大海🌊、草原🌿、羊群🐑\n📍 导航：Seal Point Road 开到底",
+          "reserved": false,
+          "text": "👀参观｜Sandfly Bay；约🚗 1H 20min；停留1H，18:30出发；（给前面的行程留0.5H buffer，担心来不及） 蓝天、大海🌊、草原🌿、羊群🐑\n📍 导航：Seal Point Road 开到底",
+          "placeId": "sandfly-bay",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-10",
+          "time": "19:00",
+          "type": "check-in",
+          "title": "Sea Salt B&B",
+          "subtitle": "入住但尼丁",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "约🚗 22min",
+          "itemDuration": "",
+          "navigationQuery": "18A Motu Street, Dunedin, Otago 9012",
+          "navigationLabel": "18A Motu Street, Dunedin, Otago 9012",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "check in",
+          "reserved": false,
+          "text": "入住但尼丁｜Sea Salt B&B；约🚗 22min；check in",
+          "placeId": "sea-salt-b-b",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-11",
+          "time": "19:30",
+          "type": "drive",
+          "title": "Woolworths Pharmacy Dunedin Central",
+          "subtitle": "停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗 9min",
+          "itemDuration": "",
+          "navigationQuery": "Woolworths Pharmacy Dunedin Central",
+          "navigationLabel": "Woolworths Pharmacy Dunedin Central",
+          "costs": {
+            "cny": "1777",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "停车场；停车后和上车前都在超市买东西，避免罚款",
+          "reserved": false,
+          "text": "🅿️停车场｜Woolworths Pharmacy Dunedin Central；约🚗 9min；停车场；停车后和上车前都在超市买东西，避免罚款",
+          "placeId": "woolworths-pharmacy-dunedin-central",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-12",
+          "time": "19:45",
+          "type": "restaurant",
+          "title": "Prohibition Smokehouse",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "停留约1H",
+          "navigationQuery": "Prohibition Smokehouse",
+          "navigationLabel": "Prohibition Smokehouse",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "当地评价不错的牛排馆",
+          "reserved": false,
+          "text": "🍔晚餐｜Prohibition Smokehouse；停留约1H；当地评价不错的牛排馆",
+          "placeId": "prohibition-smokehouse",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d04-13",
+          "time": "21:00",
+          "type": "check-in",
+          "title": "Sea Salt B&B",
+          "subtitle": "休息",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "😴休息｜Sea Salt B&B",
+          "placeId": "sea-salt-b-b"
+        }
+      ],
+      "notes": [
+        "住宿：18A Motu Street, Dunedin, Otago 9012"
+      ],
+      "costReferences": [
+        {
+          "item": "🅿️停车场",
+          "currency": "原表",
+          "amount": "RMB 1777"
+        }
+      ]
+    },
+    {
+      "id": "day-05",
+      "day": 5,
+      "date": "2026-09-29",
+      "sourceDateLabel": "9月29日",
+      "title": "Dunedin 城区与长距离转场皇后镇",
+      "locations": [
+        "Dunedin",
+        "Queenstown"
+      ],
+      "schedule": [
+        {
+          "id": "d05-01",
+          "time": "09:30",
+          "type": "restaurant",
+          "title": "Sea Salt B&B",
+          "subtitle": "早餐后出发",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "今天车程较长，不贪多",
+          "reserved": false,
+          "text": "早餐后出发｜Sea Salt B&B；今天车程较长，不贪多",
+          "placeId": "sea-salt-b-b"
+        },
+        {
+          "id": "d05-02",
+          "time": "09:50",
+          "type": "walk",
+          "title": "Tunnel Beach",
+          "subtitle": "",
+          "icon": "🚶",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗 9min",
+          "itemDuration": "停留1H",
+          "navigationQuery": "Tunnel Beach",
+          "navigationLabel": "Tunnel Beach",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "🚶｜Tunnel Beach；约🚗 9min；停留1H",
+          "placeId": "tunnel-beach",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d05-03",
+          "time": "11:40",
+          "type": "drive",
+          "title": "Woolworths Pharmacy Dunedin Central",
+          "subtitle": "停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗 15min",
+          "itemDuration": "",
+          "navigationQuery": "Woolworths Pharmacy Dunedin Central",
+          "navigationLabel": "Woolworths Pharmacy Dunedin Central",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "停车场；停车后和上车前都在超市买东西，避免罚款",
+          "reserved": false,
+          "text": "🅿️停车场｜Woolworths Pharmacy Dunedin Central；约🚗 15min；停车场；停车后和上车前都在超市买东西，避免罚款",
+          "placeId": "woolworths-pharmacy-dunedin-central",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d05-04",
+          "time": "12:00",
+          "type": "restaurant",
+          "title": "Rising Sun Dumplings Restaurant",
+          "subtitle": "午餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "停留1H",
+          "navigationQuery": "NZ/231 Moray Place, Central Dunedin, Dunedin 9016新西兰",
+          "navigationLabel": "NZ/231 Moray Place, Central Dunedin, Dunedin 9016新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "Rising Sun Dumplings Restaurant中餐厅",
+          "reserved": true,
+          "text": "🍔午餐｜Rising Sun Dumplings Restaurant；停留1H；Rising Sun Dumplings Restaurant中餐厅",
+          "placeId": "rising-sun-dumplings-restaurant",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d05-05",
+          "time": "13:00",
+          "type": "attraction",
+          "title": "citywalk",
+          "subtitle": "",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "停留1H，14:00出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "但尼丁市政厅 ➡️  圣保罗大教堂 ➡️ 奥塔哥第一教堂 ➡️ 但尼丁火车站\n火车站站台可以直接进，二楼有个工艺品店，可以淘到比较精致的纪念品哦。",
+          "reserved": false,
+          "text": "citywalk；停留1H，14:00出发；但尼丁市政厅 ➡️  圣保罗大教堂 ➡️ 奥塔哥第一教堂 ➡️ 但尼丁火车站\n火车站站台可以直接进，二楼有个工艺品店，可以淘到比较精致的纪念品哦。",
+          "placeId": "citywalk"
+        },
+        {
+          "id": "d05-06",
+          "time": "18:00",
+          "type": "check-in",
+          "title": "Tina Maria",
+          "subtitle": "入住皇后镇",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "约🚗 4H",
+          "itemDuration": "",
+          "navigationQuery": "13 Poole Lane, Queenstown, Otago Region 9300",
+          "navigationLabel": "13 Poole Lane, Queenstown, Otago Region 9300",
+          "costs": {
+            "cny": "12429",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "check in",
+          "reserved": false,
+          "text": "🛏️入住皇后镇｜Tina Maria；约🚗 4H；check in",
+          "placeId": "tina-maria",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d05-07",
+          "time": "20:00",
+          "type": "restaurant",
+          "title": "Saigon Kingdom",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "约1.5H",
+          "navigationQuery": "88 Beach Street, Queenstown 9300新西兰",
+          "navigationLabel": "88 Beach Street, Queenstown 9300新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "越南风味，生牛肉粉鲜嫩，炸鸡酥脆，是亚洲胃的解馋选择。",
+          "reserved": true,
+          "text": "🍔晚餐｜Saigon Kingdom；约1.5H；越南风味，生牛肉粉鲜嫩，炸鸡酥脆，是亚洲胃的解馋选择。",
+          "placeId": "saigon-kingdom",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d05-08",
+          "time": "21:00",
+          "type": "attraction",
+          "title": "🍷冰吧",
+          "subtitle": "Ice Bar",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "@老柴夫妇预定\n预定： https://queenstownicebar.com/bookings/",
+          "reserved": false,
+          "text": "Ice Bar｜🍷冰吧；@老柴夫妇预定\n预定： https://queenstownicebar.com/bookings/",
+          "placeId": "冰吧"
+        },
+        {
+          "id": "d05-09",
+          "time": "21:00",
+          "type": "check-in",
+          "title": "Tina Maria",
+          "subtitle": "休息",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "😴休息｜Tina Maria",
+          "placeId": "tina-maria"
+        }
+      ],
+      "notes": [
+        "住宿：13 Poole Lane, Queenstown, Otago Region 9300"
+      ],
+      "costReferences": [
+        {
+          "item": "🛏️入住皇后镇",
+          "currency": "原表",
+          "amount": "RMB 12429"
+        }
+      ]
+    },
+    {
+      "id": "day-06",
+      "day": 6,
+      "date": "2026-09-30",
+      "sourceDateLabel": "9月30日",
+      "title": "皇后镇婚纱与湖边休整",
+      "locations": [
+        "Queenstown",
+        "Lake Wakatipu",
+        "Skyline"
+      ],
+      "schedule": [
+        {
+          "id": "d06-01",
+          "time": "09:30",
+          "type": "restaurant",
+          "title": "Tina Maria",
+          "subtitle": "早餐后出发",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "早餐后出发｜Tina Maria",
+          "placeId": "tina-maria"
+        },
+        {
+          "id": "d06-02",
+          "time": "10:00-12:00",
+          "type": "attraction",
+          "title": "婚纱店",
+          "subtitle": "挑选婚纱",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "10 Avalon Cresent., Fernhill, Queenstown",
+          "navigationLabel": "10 Avalon Cresent., Fernhill, Queenstown",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "周赤&钰雪（先开车去婚纱店，再回民宿停车，皇后镇停车贵，我们可以停民宿）",
+          "reserved": false,
+          "text": "挑选婚纱｜婚纱店；周赤&钰雪（先开车去婚纱店，再回民宿停车，皇后镇停车贵，我们可以停民宿）",
+          "placeId": "婚纱店",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d06-03",
+          "time": "待定",
+          "type": "attraction",
+          "title": "滑翔伞",
+          "subtitle": "极限",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "山山&王博",
+          "reserved": false,
+          "text": "🪂极限｜滑翔伞；山山&王博",
+          "placeId": "滑翔伞"
+        },
+        {
+          "id": "d06-04",
+          "time": "12:00",
+          "type": "restaurant",
+          "title": "Bella Cucina",
+          "subtitle": "午餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "约1.5H",
+          "navigationQuery": "Bella Cucina, 6 Brecon Street, Queenstown 9300",
+          "navigationLabel": "Bella Cucina, 6 Brecon Street, Queenstown 9300",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "超好吃的意大利菜， 预定:  https://booking.nowbookit.com/booking?accountid=c3b945a4-7a46-4fd7-972a-842cdb54d331&venueid=1897&theme=light&accent=32,149,242",
+          "reserved": true,
+          "text": "🍔午餐｜Bella Cucina；约1.5H；超好吃的意大利菜， 预定:  https://booking.nowbookit.com/booking?accountid=c3b945a4-7a46-4fd7-972a-842cdb54d331&venueid=1897&theme=light&accent=32,149,242",
+          "placeId": "bella-cucina",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d06-05",
+          "time": "13:30",
+          "type": "attraction",
+          "title": "湖边+花园慢逛",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "约3H",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "• 瓦卡蒂普湖岸步道 Lakefront Walk\n沿Marine Parade走，湖水湛蓝，雪山倒映，打卡TSS蒸汽船码头\n• 皇后镇花园 Queenstown Gardens（2km环线，40min）\n半岛花园，玫瑰园、古树、草坪，直面Cecil Peak",
+          "reserved": false,
+          "text": "👀参观｜湖边+花园慢逛；约3H；• 瓦卡蒂普湖岸步道 Lakefront Walk\n沿Marine Parade走，湖水湛蓝，雪山倒映，打卡TSS蒸汽船码头\n• 皇后镇花园 Queenstown Gardens（2km环线，40min）\n半岛花园，玫瑰园、古树、草坪，直面Cecil Peak",
+          "placeId": "湖边-花园慢逛"
+        },
+        {
+          "id": "d06-06",
+          "time": "待定",
+          "type": "attraction",
+          "title": "小镇文艺逛吃",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "• 主街 Beach St & Camp St\n彩色木屋、户外店、咖啡馆、冰淇淋店（Patagonia）\n• 圣彼得教堂 St Peter's Church\n石头外墙+山景，复古出片，安静小众",
+          "reserved": false,
+          "text": "👀参观｜小镇文艺逛吃；• 主街 Beach St & Camp St\n彩色木屋、户外店、咖啡馆、冰淇淋店（Patagonia）\n• 圣彼得教堂 St Peter's Church\n石头外墙+山景，复古出片，安静小众",
+          "placeId": "小镇文艺逛吃"
+        },
+        {
+          "id": "d06-07",
+          "time": "待定",
+          "type": "attraction",
+          "title": "伴手礼店",
+          "subtitle": "买伴手礼",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "*路线可按照实际情况调整顺序",
+          "reserved": false,
+          "text": "🛍️买伴手礼｜伴手礼店；*路线可按照实际情况调整顺序",
+          "placeId": "伴手礼店"
+        },
+        {
+          "id": "d06-08",
+          "time": "16:30",
+          "type": "attraction",
+          "title": "skyline 缆车上山 + Luge滑板车",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "4:30之前上缆车，可以买6圈的，可以玩得很爽\n提前一天  https://queenstown.skyline.co.nz/",
+          "reserved": false,
+          "text": "👀参观｜skyline 缆车上山 + Luge滑板车；4:30之前上缆车，可以买6圈的，可以玩得很爽\n提前一天  https://queenstown.skyline.co.nz/",
+          "placeId": "skyline-缆车上山-luge滑板车"
+        },
+        {
+          "id": "d06-09",
+          "time": "19:00",
+          "type": "attraction",
+          "title": "skyline 缆车下山",
+          "subtitle": "",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "在缆车上看夕阳，很好看，日落时间（约19:51）",
+          "reserved": false,
+          "text": "skyline 缆车下山；在缆车上看夕阳，很好看，日落时间（约19:51）",
+          "placeId": "skyline-缆车下山"
+        },
+        {
+          "id": "d06-10",
+          "time": "20:00",
+          "type": "restaurant",
+          "title": "Flame Bar & Grill",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "约1.5H",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "Firstable半价: https://www.firsttable.co.nz/queenstown-lakes/queenstown/flame-bar-and-grill?session=lunch / 秘制南非烧烤配方，排骨&牛排，皇后镇最受欢迎的牛排餐厅 /预定： https://www.flamegrill.co.nz/reservation",
+          "reserved": true,
+          "text": "🍔晚餐｜Flame Bar & Grill；约1.5H；Firstable半价: https://www.firsttable.co.nz/queenstown-lakes/queenstown/flame-bar-and-grill?session=lunch / 秘制南非烧烤配方，排骨&牛排，皇后镇最受欢迎的牛排餐厅 /预定： https://www.flamegrill.co.nz/reservation",
+          "placeId": "flame-bar-grill"
+        },
+        {
+          "id": "d06-11",
+          "time": "21:00",
+          "type": "check-in",
+          "title": "Tina Maria",
+          "subtitle": "休息",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "早一点休息，第二天还有很多行程安排",
+          "reserved": false,
+          "text": "😴休息｜Tina Maria；早一点休息，第二天还有很多行程安排",
+          "placeId": "tina-maria"
+        }
+      ],
+      "notes": [],
+      "costReferences": []
+    },
+    {
+      "id": "day-07",
+      "day": 7,
+      "date": "2026-10-01",
+      "sourceDateLabel": "10月1日",
+      "title": "皇后镇婚礼日 / 米尔福德峡湾备选",
+      "locations": [
+        "Queenstown",
+        "婚礼日",
+        "Milford Sound 备选"
+      ],
+      "schedule": [
+        {
+          "id": "d07-01",
+          "time": "09:30",
+          "type": "check-in",
+          "title": "Tina Maria",
+          "subtitle": "起床",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "🛏️起床｜Tina Maria",
+          "placeId": "tina-maria"
+        },
+        {
+          "id": "d07-02",
+          "time": "一整天",
+          "type": "attraction",
+          "title": "婚礼",
+          "subtitle": "",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "周赤&钰雪",
+          "reserved": false,
+          "text": "👰🤵｜婚礼；周赤&钰雪",
+          "placeId": "婚礼"
+        },
+        {
+          "id": "d07-03",
+          "time": "待定",
+          "type": "attraction",
+          "title": "米尔福德峡湾",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "山山&王博",
+          "reserved": false,
+          "text": "👀参观｜米尔福德峡湾；山山&王博",
+          "placeId": "米尔福德峡湾"
+        },
+        {
+          "id": "d07-04",
+          "time": "19:00",
+          "type": "restaurant",
+          "title": "Ferburger",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "排队/传说中比脸大的汉堡 Google 4.6 人均$20-30",
+          "reserved": false,
+          "text": "🍔晚餐｜Ferburger；排队/传说中比脸大的汉堡 Google 4.6 人均$20-30",
+          "placeId": "ferburger"
+        },
+        {
+          "id": "d07-05",
+          "time": "20:00",
+          "type": "check-in",
+          "title": "Tina Maria",
+          "subtitle": "休息",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "😴休息｜Tina Maria",
+          "placeId": "tina-maria"
+        }
+      ],
+      "notes": [],
+      "costReferences": []
+    },
+    {
+      "id": "day-08",
+      "day": 8,
+      "date": "2026-10-02",
+      "sourceDateLabel": "10月2日",
+      "title": "皇后镇 - 箭镇 - 瓦纳卡",
+      "locations": [
+        "Queenstown",
+        "Arrowtown",
+        "Wanaka"
+      ],
+      "schedule": [
+        {
+          "id": "d08-01",
+          "time": "09:30",
+          "type": "restaurant",
+          "title": "Tina Maria",
+          "subtitle": "早餐后出发",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "今天轻松转场到 Wanaka",
+          "reserved": false,
+          "text": "早餐后出发｜Tina Maria；今天轻松转场到 Wanaka",
+          "placeId": "tina-maria"
+        },
+        {
+          "id": "d08-02",
+          "time": "10:00",
+          "type": "drive",
+          "title": "Arrowtown Wine Store",
+          "subtitle": "停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗30min",
+          "itemDuration": "",
+          "navigationQuery": "Arrowtown Wine Store",
+          "navigationLabel": "Arrowtown Wine Store",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "左边就是个超大免费停车场，步行去主街很方便",
+          "reserved": false,
+          "text": "🅿️停车场｜Arrowtown Wine Store；约🚗30min；左边就是个超大免费停车场，步行去主街很方便",
+          "placeId": "arrowtown-wine-store",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-03",
+          "time": "待定",
+          "type": "restaurant",
+          "title": "Patagonia ice cream",
+          "subtitle": "冰淇淋",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "停留3H，13:00出发",
+          "navigationQuery": "Patagonia ice cream",
+          "navigationLabel": "Patagonia ice cream",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "🍟冰淇淋｜Patagonia ice cream；停留3H，13:00出发",
+          "placeId": "patagonia-ice-cream",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-04",
+          "time": "待定",
+          "type": "restaurant",
+          "title": "Wolf Coffee Roasters",
+          "subtitle": "杰伦咖啡",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "Wolf Coffee Roasters",
+          "navigationLabel": "Wolf Coffee Roasters",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "杰伦迷火速打卡杰伦同款咖啡\n店里装修简约，还可以现场看到咖啡豆烘焙",
+          "reserved": false,
+          "text": "☕️杰伦咖啡｜Wolf Coffee Roasters；杰伦迷火速打卡杰伦同款咖啡\n店里装修简约，还可以现场看到咖啡豆烘焙",
+          "placeId": "wolf-coffee-roasters",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-05",
+          "time": "待定",
+          "type": "attraction",
+          "title": "Windy Ridge",
+          "subtitle": "网红牛奶",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "Windy Ridge",
+          "navigationLabel": "Windy Ridge",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "网红牛奶，就在wolf coffee对面的Night&Day超市买",
+          "reserved": false,
+          "text": "🥛网红牛奶｜Windy Ridge；网红牛奶，就在wolf coffee对面的Night&Day超市买",
+          "placeId": "windy-ridge",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-06",
+          "time": "待定",
+          "type": "attraction",
+          "title": "Golden Fleece",
+          "subtitle": "",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "Golden Fleece",
+          "navigationLabel": "Golden Fleece",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "卖各种羊毛制品的商店",
+          "reserved": false,
+          "text": "🐑｜Golden Fleece；卖各种羊毛制品的商店",
+          "placeId": "golden-fleece",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-07",
+          "time": "待定",
+          "type": "restaurant",
+          "title": "Provisions of Arrowtown",
+          "subtitle": "午餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "65 Buckingham Street, Arrowtown 9302新西兰",
+          "navigationLabel": "65 Buckingham Street, Arrowtown 9302新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "融合菜的风格，但每道菜味型都不一样，而且搭配非常有新意",
+          "reserved": false,
+          "text": "🍔午餐｜Provisions of Arrowtown；融合菜的风格，但每道菜味型都不一样，而且搭配非常有新意",
+          "placeId": "provisions-of-arrowtown",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-08",
+          "time": "13:15",
+          "type": "attraction",
+          "title": "Arrow Junction Lookout Point",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗 13min",
+          "itemDuration": "停留15min，13:30出发",
+          "navigationQuery": "Crown Range Road, Arrow Junction 9371新西兰",
+          "navigationLabel": "Crown Range Road, Arrow Junction 9371新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "观景台",
+          "reserved": false,
+          "text": "👀参观｜Arrow Junction Lookout Point；约🚗 13min；停留15min，13:30出发；观景台",
+          "placeId": "arrow-junction-lookout-point",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-09",
+          "time": "13:40",
+          "type": "attraction",
+          "title": "Crown Range Scenic Lookout",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗 8min",
+          "itemDuration": "停留10min，13:50出发",
+          "navigationQuery": "Roaring Meg 9384新西兰",
+          "navigationLabel": "Roaring Meg 9384新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "观景台",
+          "reserved": false,
+          "text": "👀参观｜Crown Range Scenic Lookout；约🚗 8min；停留10min，13:50出发；观景台",
+          "placeId": "crown-range-scenic-lookout",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-10",
+          "time": "13:55",
+          "type": "attraction",
+          "title": "Crown Range Summit",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗 2min",
+          "itemDuration": "停留10min，14:05出发",
+          "navigationQuery": "Crown Range Road, Roaring Meg 9384新西兰",
+          "navigationLabel": "Crown Range Road, Roaring Meg 9384新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "观景台",
+          "reserved": false,
+          "text": "👀参观｜Crown Range Summit；约🚗 2min；停留10min，14:05出发；观景台",
+          "placeId": "crown-range-summit",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-11",
+          "time": "14:40",
+          "type": "attraction",
+          "title": "wanaka hill park look out",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗35 min",
+          "itemDuration": "停留20min，15:00出发",
+          "navigationQuery": "Wānaka 9305新西兰",
+          "navigationLabel": "Wānaka 9305新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "一个陡坡，上去途中的靠右边，很容易忽略，很小的小山坡，俯瞰wanaka全景",
+          "reserved": false,
+          "text": "👀参观｜wanaka hill park look out；约🚗35 min；停留20min，15:00出发；一个陡坡，上去途中的靠右边，很容易忽略，很小的小山坡，俯瞰wanaka全景",
+          "placeId": "wanaka-hill-park-look-out",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-12",
+          "time": "15:20",
+          "type": "drive",
+          "title": "Flora Dora Parad",
+          "subtitle": "停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗 20min",
+          "itemDuration": "停留40min，16:00出发",
+          "navigationQuery": "Lake Hāwea 9382新西兰",
+          "navigationLabel": "Lake Hāwea 9382新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "停车场下去就是Lake Hawea walkway，往前走就是wedding tree，再往前有石子沙滩，有长椅，步道那片人非常少，到石子沙滩有部分露营的",
+          "reserved": false,
+          "text": "🅿️停车场｜Flora Dora Parad；约🚗 20min；停留40min，16:00出发；停车场下去就是Lake Hawea walkway，往前走就是wedding tree，再往前有石子沙滩，有长椅，步道那片人非常少，到石子沙滩有部分露营的",
+          "placeId": "flora-dora-parad",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-13",
+          "time": "16:20",
+          "type": "drive",
+          "title": "Wanaka Station Park",
+          "subtitle": "停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗 20min",
+          "itemDuration": "",
+          "navigationQuery": "62 Wanaka Mount Aspiring Road, Wānaka 9305新西兰",
+          "navigationLabel": "62 Wanaka Mount Aspiring Road, Wānaka 9305新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "🅿️停车场｜Wanaka Station Park；约🚗 20min",
+          "placeId": "wanaka-station-park",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-14",
+          "time": "待定",
+          "type": "attraction",
+          "title": "That Wanaka Tree孤独的树",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "Roys Bay 59 Wanaka Mount Aspiring Road, Wānaka 9305新西兰",
+          "navigationLabel": "Roys Bay 59 Wanaka Mount Aspiring Road, Wānaka 9305新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "👀参观｜That Wanaka Tree孤独的树",
+          "placeId": "that-wanaka-tree孤独的树",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-15",
+          "time": "待定",
+          "type": "attraction",
+          "title": "网红大树",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "就在孤独的树对面，小路往里走一眼能看到，有阳光洒下来的时候更好看",
+          "reserved": false,
+          "text": "👀参观｜网红大树；就在孤独的树对面，小路往里走一眼能看到，有阳光洒下来的时候更好看",
+          "placeId": "网红大树"
+        },
+        {
+          "id": "d08-16",
+          "time": "待定",
+          "type": "attraction",
+          "title": "Edgewater 草坪",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "餐厅门口的大草坪有很多懒人沙发，可以直接躺着晒太阳",
+          "reserved": false,
+          "text": "👀参观｜Edgewater 草坪；餐厅门口的大草坪有很多懒人沙发，可以直接躺着晒太阳",
+          "placeId": "edgewater-草坪"
+        },
+        {
+          "id": "d08-17",
+          "time": "19:00",
+          "type": "check-in",
+          "title": "34A Packer Road",
+          "subtitle": "入住瓦纳卡",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "34A Packer Road, Wānaka, Otago Region 9382",
+          "navigationLabel": "34A Packer Road, Wānaka, Otago Region 9382",
+          "costs": {
+            "cny": "2067",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "check in",
+          "reserved": false,
+          "text": "🛏️ 入住瓦纳卡｜34A Packer Road；check in",
+          "placeId": "34a-packer-road",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d08-18",
+          "time": "20:30",
+          "type": "restaurant",
+          "title": "Kika",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "约1.5H",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "可以预定一下\n评价惊艳/牛肉塔塔、羊肩肉 https://kika.nz/bookings/",
+          "reserved": true,
+          "text": "🍔晚餐｜Kika；约1.5H；可以预定一下\n评价惊艳/牛肉塔塔、羊肩肉 https://kika.nz/bookings/",
+          "placeId": "kika"
+        },
+        {
+          "id": "d08-19",
+          "time": "22:30",
+          "type": "check-in",
+          "title": "34A Packer Road",
+          "subtitle": "休息",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "😴休息｜34A Packer Road",
+          "placeId": "34a-packer-road"
+        }
+      ],
+      "notes": [
+        "住宿：34A Packer Road, Wānaka, Otago Region 9382"
+      ],
+      "costReferences": [
+        {
+          "item": "🛏️ 入住瓦纳卡",
+          "currency": "原表",
+          "amount": "RMB 2067"
+        }
+      ]
+    },
+    {
+      "id": "day-09",
+      "day": 9,
+      "date": "2026-10-03",
+      "sourceDateLabel": "10月3日",
+      "title": "瓦纳卡 - 普卡基湖 - 库克山 - Twizel",
+      "locations": [
+        "Wanaka",
+        "Lake Pukaki",
+        "Aoraki / Mount Cook",
+        "Twizel"
+      ],
+      "schedule": [
+        {
+          "id": "d09-01",
+          "time": "09:30",
+          "type": "restaurant",
+          "title": "Wanaka",
+          "subtitle": "早餐后出发",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "今天景观路多，保持白天驾驶",
+          "reserved": false,
+          "text": "早餐后出发｜Wanaka；今天景观路多，保持白天驾驶",
+          "placeId": "wanaka"
+        },
+        {
+          "id": "d09-02",
+          "time": "11:10",
+          "type": "attraction",
+          "title": "Lindis Pass Viewpoint",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗1H 6min",
+          "itemDuration": "停留20min，11:30出发",
+          "navigationQuery": "Lindis Pass 9383新西兰",
+          "navigationLabel": "Lindis Pass 9383新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "观景台",
+          "reserved": false,
+          "text": "👀参观｜Lindis Pass Viewpoint；约🚗1H 6min；停留20min，11:30出发；观景台",
+          "placeId": "lindis-pass-viewpoint",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d09-03",
+          "time": "11:45",
+          "type": "attraction",
+          "title": "Ahuriri River Lookout",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗13min",
+          "itemDuration": "停留20min，12:05出发",
+          "navigationQuery": "Omarama-Lindis Pass Road, Omarama 9412新西兰",
+          "navigationLabel": "Omarama-Lindis Pass Road, Omarama 9412新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "观景台",
+          "reserved": false,
+          "text": "👀参观｜Ahuriri River Lookout；约🚗13min；停留20min，12:05出发；观景台",
+          "placeId": "ahuriri-river-lookout",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d09-04",
+          "time": "12:40",
+          "type": "attraction",
+          "title": "Lake Ruataniwha View Point",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗30min",
+          "itemDuration": "停留20min，13:00出发",
+          "navigationQuery": "2609 Twizel-Omarama Road, Glenbrook 7999新西兰",
+          "navigationLabel": "2609 Twizel-Omarama Road, Glenbrook 7999新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "观景台",
+          "reserved": false,
+          "text": "👀参观｜Lake Ruataniwha View Point；约🚗30min；停留20min，13:00出发；观景台",
+          "placeId": "lake-ruataniwha-view-point",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d09-05",
+          "time": "13:15",
+          "type": "restaurant",
+          "title": "Mt Cook Alpine Salmon Shop🐟",
+          "subtitle": "午餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "约🚗12min",
+          "itemDuration": "停留30min，13:45出发",
+          "navigationQuery": "Lake Pukaki Information Centre, Pukaki 7999新西兰",
+          "navigationLabel": "Lake Pukaki Information Centre, Pukaki 7999新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "能看到山和湖，靠近一个Lake Puaki View Point，可以走过去看看",
+          "reserved": false,
+          "text": "🍔午餐｜Mt Cook Alpine Salmon Shop🐟；约🚗12min；停留30min，13:45出发；能看到山和湖，靠近一个Lake Puaki View Point，可以走过去看看",
+          "placeId": "mt-cook-alpine-salmon-shop",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d09-06",
+          "time": "14:00",
+          "type": "attraction",
+          "title": "Peter's lookout",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗12min",
+          "itemDuration": "停留20min，14:20出发",
+          "navigationQuery": "Ben Ohau 7999新西兰",
+          "navigationLabel": "Ben Ohau 7999新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "公路大片",
+          "reserved": false,
+          "text": "👀参观｜Peter's lookout；约🚗12min；停留20min，14:20出发；公路大片",
+          "placeId": "peter-s-lookout",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d09-07",
+          "time": "14:25",
+          "type": "attraction",
+          "title": "Lake Pukaki Beach Lookout",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗5min",
+          "itemDuration": "停留20min，14:45出发",
+          "navigationQuery": "W4WP+P4, Ben Ohau 7999新西兰",
+          "navigationLabel": "W4WP+P4, Ben Ohau 7999新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "👀参观｜Lake Pukaki Beach Lookout；约🚗5min；停留20min，14:45出发",
+          "placeId": "lake-pukaki-beach-lookout",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d09-08",
+          "time": "15:00",
+          "type": "attraction",
+          "title": "格兰特岚德观景台",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗15min",
+          "itemDuration": "停留20min，15:20出发",
+          "navigationQuery": "State Highway 80, Glentanner 7999新西兰",
+          "navigationLabel": "State Highway 80, Glentanner 7999新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "👀参观｜格兰特岚德观景台；约🚗15min；停留20min，15:20出发",
+          "placeId": "格兰特岚德观景台",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d09-09",
+          "time": "15:40",
+          "type": "drive",
+          "title": "Hermitage - tasman clacier car park",
+          "subtitle": "停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗 20min",
+          "itemDuration": "",
+          "navigationQuery": "Tasman Valley Road, Mount Cook National Park 7999新西兰",
+          "navigationLabel": "Tasman Valley Road, Mount Cook National Park 7999新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "🅿️停车场｜Hermitage - tasman clacier car park；约🚗 20min",
+          "placeId": "hermitage---tasman-clacier-car-park",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d09-10",
+          "time": "16:00",
+          "type": "walk",
+          "title": "Tasman Glacier 塔斯曼冰川步道",
+          "subtitle": "徒步",
+          "icon": "🚶",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "停留1.5H，17:10出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "往返40min，预留1个半小时拍照等\nps：另有Hooker valley track 胡克山谷步道需要3小时往返感觉大家吃不消",
+          "reserved": false,
+          "text": "🚶徒步｜Tasman Glacier 塔斯曼冰川步道；停留1.5H，17:10出发；往返40min，预留1个半小时拍照等\nps：另有Hooker valley track 胡克山谷步道需要3小时往返感觉大家吃不消",
+          "placeId": "tasman-glacier-塔斯曼冰川步道"
+        },
+        {
+          "id": "d09-11",
+          "time": "18:30",
+          "type": "check-in",
+          "title": "35 Tasman Road",
+          "subtitle": "入住/休整",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "约🚗1H",
+          "itemDuration": "",
+          "navigationQuery": "35 Tasman Road, Twizel, Canterbury Region 7901",
+          "navigationLabel": "35 Tasman Road, Twizel, Canterbury Region 7901",
+          "costs": {
+            "cny": "2056",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "酒店可以吃泡面，好好休息",
+          "reserved": false,
+          "text": "🛏️ 入住/休整｜35 Tasman Road；约🚗1H；酒店可以吃泡面，好好休息",
+          "placeId": "35-tasman-road",
+          "navigationSource": "excel"
+        }
+      ],
+      "notes": [
+        "住宿：35 Tasman Road, Twizel, Canterbury Region 7901"
+      ],
+      "costReferences": [
+        {
+          "item": "🛏️ 入住/休整",
+          "currency": "原表",
+          "amount": "RMB 2056"
+        }
+      ]
+    },
+    {
+      "id": "day-10",
+      "day": 10,
+      "date": "2026-10-04",
+      "sourceDateLabel": "10月4日",
+      "title": "Twizel - Air Safaris - 蒂卡波观星",
+      "locations": [
+        "Twizel",
+        "Lake Tekapo",
+        "Mt John"
+      ],
+      "schedule": [
+        {
+          "id": "d10-01",
+          "time": "09:00",
+          "type": "restaurant",
+          "title": "35 Tasman Road",
+          "subtitle": "早餐后出发",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "早餐后出发｜35 Tasman Road",
+          "placeId": "35-tasman-road"
+        },
+        {
+          "id": "d10-02",
+          "time": "09:40",
+          "type": "attraction",
+          "title": "air Safaris",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗40min",
+          "itemDuration": "停留1.5H，11:30出发",
+          "navigationQuery": "Tekapo airport state highway 8 Lake tekapo 7999 P16",
+          "navigationLabel": "Tekapo airport state highway 8 Lake tekapo 7999 P16",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "1️⃣乘坐tips\n1. 提前15分钟check in\n2. 上飞机前可以和飞机合照 团队为单位下飞机可以有更多的时间进行单人合照 也可以和机长合照\n3. 相机或手机镜头不能接触飞机窗户避免刮伤\n(如果带了相机会给一个软质遮光罩)\n4. 坐飞机左侧是先湖景后雪山景 右侧反之 均能看到美景\n5. 飞行时长约50mins，可以看到蒂卡波湖、Pukaki湖、辫状河、库克山、冰川，机长会进行英文讲解\n6. 提前半小时吃晕车药\n2️⃣ 其他\n1. 集散点有厕所，纪念品（冰箱贴、T恤等）",
+          "reserved": false,
+          "text": "👀参观｜air Safaris；约🚗40min；停留1.5H，11:30出发；1️⃣乘坐tips\n1. 提前15分钟check in\n2. 上飞机前可以和飞机合照 团队为单位下飞机可以有更多的时间进行单人合照 也可以和机长合照\n3. 相机或手机镜头不能接触飞机窗户避免刮伤\n(如果带了相机会给一个软质遮光罩)\n4. 坐飞机左侧是先湖景后雪山景 右侧反之 均能看到美景\n5. 飞行时长约50mins，可以看到蒂卡波湖、Pukaki湖、辫状河、库克山、冰川，机长会进行英文讲解\n6. 提前半小时吃晕车药\n2️⃣ 其他\n1. 集散点有厕所，纪念品（冰箱贴、T恤等）",
+          "placeId": "air-safaris",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d10-03",
+          "time": "12:00",
+          "type": "restaurant",
+          "title": "Astro Café",
+          "subtitle": "午餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "约🚗12min",
+          "itemDuration": "停留1.5H，13:30出发",
+          "navigationQuery": "Godley Peaks Road, Lake Tekapo 7945新西兰",
+          "navigationLabel": "Godley Peaks Road, Lake Tekapo 7945新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "孤独星球best coffee between earth and sky/ 限流/驾车 15 分钟到达约翰山天文台入口，入口位于Godley Peaks Road, off State highway 8 / https://www.darkskyproject.co.nz/dine/astro-cafe/",
+          "reserved": false,
+          "text": "🍔午餐｜Astro Café；约🚗12min；停留1.5H，13:30出发；孤独星球best coffee between earth and sky/ 限流/驾车 15 分钟到达约翰山天文台入口，入口位于Godley Peaks Road, off State highway 8 / https://www.darkskyproject.co.nz/dine/astro-cafe/",
+          "placeId": "astro-café",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d10-04",
+          "time": "13:50",
+          "type": "attraction",
+          "title": "Lake McGregor view point",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗12min",
+          "itemDuration": "停留20min，14:10出发",
+          "navigationQuery": "157 Lake Alexandrina Road, Tekapo 7999新西兰",
+          "navigationLabel": "157 Lake Alexandrina Road, Tekapo 7999新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "观景台",
+          "reserved": false,
+          "text": "👀参观｜Lake McGregor view point；约🚗12min；停留20min，14:10出发；观景台",
+          "placeId": "lake-mcgregor-view-point",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d10-05",
+          "time": "14:15",
+          "type": "attraction",
+          "title": "Lake Alexandrina",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗2min",
+          "itemDuration": "停留20min，14:35出发",
+          "navigationQuery": "157 Lake Alexandrina Road, Tekapo 7999新西兰",
+          "navigationLabel": "157 Lake Alexandrina Road, Tekapo 7999新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "👀参观｜Lake Alexandrina；约🚗2min；停留20min，14:35出发",
+          "placeId": "lake-alexandrina",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d10-06",
+          "time": "14:50",
+          "type": "restaurant",
+          "title": "The Better Batter",
+          "subtitle": "小吃",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "约🚗14min",
+          "itemDuration": "停留3H",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "🚶‍♀️ 徒步路线详解（不一定要走完）\n从起点出发，沿湖岸前行，会先经过Lakeside Playground旁的一片小树林（图1、3），树影斑驳，湖风轻拂，是途中👍处静谧角落。\n继续向前，会抵达Tekapo Springs温泉中心，穿过其停车场后，注意步道分叉：\n· ➡️ 右侧为沿湖路线，即Mt. John Track沿湖段\n· ⬆️ 左侧为上山顶路线（通往Astro Café）\n选择右侧路径，你将正式进入这段“湖光秘境”。\n🌲 沿途风景亮点\n· 湖岸+雪山视角：与镇中心开阔的视野不同，这一段湖岸线更贴近水面，雪山倒映在湖中，画面宁静而立体。\n· 森林小径：约15-20分钟后，步道逐渐转入一片绿荫浓郁的林地，从林间间隙望出去，湖面如一块渐变蓝绿色的宝石。\n· 可爱的小动物：路上常会遇到几只野兔🐇在草丛间跳跃，为徒步增添了几分生动趣味。\n· 南端观景点：建议走到湖的南端，这里是距离湖心“绿洲”较近的岸点，视野独特，适合停留拍照。\n---\n⏱ 行程与时间\n· 单程约1.5-2小时，往返约3.5-4小时\n· 全程几乎无爬升，坡度平缓，适合大多数体力水平的游客\n· 回程可选择原路返回，亦可走环线（如连接部分农场路段），感受不同光线与角度的湖景变化",
+          "reserved": false,
+          "text": "🍟小吃｜The Better Batter；约🚗14min；停留3H；🚶‍♀️ 徒步路线详解（不一定要走完）\n从起点出发，沿湖岸前行，会先经过Lakeside Playground旁的一片小树林（图1、3），树影斑驳，湖风轻拂，是途中👍处静谧角落。\n继续向前，会抵达Tekapo Springs温泉中心，穿过其停车场后，注意步道分叉：\n· ➡️ 右侧为沿湖路线，即Mt. John Track沿湖段\n· ⬆️ 左侧为上山顶路线（通往Astro Café）\n选择右侧路径，你将正式进入这段“湖光秘境”。\n🌲 沿途风景亮点\n· 湖岸+雪山视角：与镇中心开阔的视野不同，这一段湖岸线更贴近水面，雪山倒映在湖中，画面宁静而立体。\n· 森林小径：约15-20分钟后，步道逐渐转入一片绿荫浓郁的林地，从林间间隙望出去，湖面如一块渐变蓝绿色的宝石。\n· 可爱的小动物：路上常会遇到几只野兔🐇在草丛间跳跃，为徒步增添了几分生动趣味。\n· 南端观景点：建议走到湖的南端，这里是距离湖心“绿洲”较近的岸点，视野独特，适合停留拍照。\n---\n⏱ 行程与时间\n· 单程约1.5-2小时，往返约3.5-4小时\n· 全程几乎无爬升，坡度平缓，适合大多数体力水平的游客\n· 回程可选择原路返回，亦可走环线（如连接部分农场路段），感受不同光线与角度的湖景变化",
+          "placeId": "the-better-batter"
+        },
+        {
+          "id": "d10-07",
+          "time": "待定",
+          "type": "attraction",
+          "title": "Church of the Good Shepherd 好牧羊人教堂",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "👀参观｜Church of the Good Shepherd 好牧羊人教堂",
+          "placeId": "church-of-the-good-shepherd-好牧羊人教堂"
+        },
+        {
+          "id": "d10-08",
+          "time": "待定",
+          "type": "walk",
+          "title": "Mt. John Track沿湖段",
+          "subtitle": "徒步",
+          "icon": "🚶",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "🚶徒步｜Mt. John Track沿湖段",
+          "placeId": "mt-john-track沿湖段"
+        },
+        {
+          "id": "d10-09",
+          "time": "18:00",
+          "type": "restaurant",
+          "title": "Mackenzies Bar & Grill 18:00",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "约1.5H，19:30出发",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "Mackenzies cafe bar&grill（石板牛排）需预约",
+          "reserved": false,
+          "text": "🍔晚餐｜Mackenzies Bar & Grill 18:00；约1.5H，19:30出发；Mackenzies cafe bar&grill（石板牛排）需预约",
+          "placeId": "mackenzies-bar-grill-18-00"
+        },
+        {
+          "id": "d10-10",
+          "time": "19:40",
+          "type": "check-in",
+          "title": "64 Murray Place",
+          "subtitle": "入住tekapo",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "3000",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "check in",
+          "reserved": false,
+          "text": "🛏️ 入住tekapo｜64 Murray Place；check in",
+          "placeId": "64-murray-place"
+        },
+        {
+          "id": "d10-11",
+          "time": "20:45-22:15",
+          "type": "attraction",
+          "title": "1.chameleonstargazing：90分钟，109nzd 2.dark sky project：2小时,209 nzd 需提前预定",
+          "subtitle": "观星",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "需预定chameleonstargazing\n提前30min\n观星不参团的话，推荐下载app：Star Walk 2 Plus（图17），AR实时指向，自动识别恒星、星座、行星，简单易用。留意晚上观星时间：\n农历廿十--廿六：越早受月亮影响越小；\n农历廿七--次月初五：都好，几乎整晚没有月亮；\n农历初六--初十：越晚受月亮影响越小，也是观测月球表面最好的时候；\n农历十一--十九：都一样，银河较淡，星星数量少，可清楚观测到月球表面",
+          "reserved": false,
+          "text": "观星｜1.chameleonstargazing：90分钟，109nzd 2.dark sky project：2小时,209 nzd 需提前预定；需预定chameleonstargazing\n提前30min\n观星不参团的话，推荐下载app：Star Walk 2 Plus（图17），AR实时指向，自动识别恒星、星座、行星，简单易用。留意晚上观星时间：\n农历廿十--廿六：越早受月亮影响越小；\n农历廿七--次月初五：都好，几乎整晚没有月亮；\n农历初六--初十：越晚受月亮影响越小，也是观测月球表面最好的时候；\n农历十一--十九：都一样，银河较淡，星星数量少，可清楚观测到月球表面",
+          "placeId": "1-chameleonstargazing-90分钟-109nzd-2-dark-sky-project-2"
+        },
+        {
+          "id": "d10-12",
+          "time": "23:30",
+          "type": "check-in",
+          "title": "64 Murray Place",
+          "subtitle": "入住/休整",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "晚上观星；可参考 V1：Chameleon Stargazing / Dark Sky Project",
+          "reserved": false,
+          "text": "🛏️ 入住/休整｜64 Murray Place；晚上观星；可参考 V1：Chameleon Stargazing / Dark Sky Project",
+          "placeId": "64-murray-place"
+        }
+      ],
+      "notes": [
+        "住宿：64 Murray Place, Lake Tekapo, Canterbury 7999"
+      ],
+      "costReferences": [
+        {
+          "item": "🛏️ 入住tekapo",
+          "currency": "原表",
+          "amount": "RMB 3000"
+        }
+      ]
+    },
+    {
+      "id": "day-11",
+      "day": 11,
+      "date": "2026-10-05",
+      "sourceDateLabel": "10月5日",
+      "title": "蒂卡波 - Fairlie - Rakaia Gorge - 基督城",
+      "locations": [
+        "Lake Tekapo",
+        "Fairlie",
+        "Rakaia Gorge",
+        "Christchurch"
+      ],
+      "schedule": [
+        {
+          "id": "d11-01",
+          "time": "10:00",
+          "type": "restaurant",
+          "title": "64 Murray Place",
+          "subtitle": "早餐后出发",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "可能需预留air safaris没飞成的时间（1.5h）如果昨天飞成了，就不吃早饭直接出发，如果没飞成就在民宿吃早饭，再去飞",
+          "reserved": false,
+          "text": "早餐后出发｜64 Murray Place；可能需预留air safaris没飞成的时间（1.5h）如果昨天飞成了，就不吃早饭直接出发，如果没飞成就在民宿吃早饭，再去飞",
+          "placeId": "64-murray-place"
+        },
+        {
+          "id": "d11-02",
+          "time": "10:30",
+          "type": "restaurant",
+          "title": "Fairlie Bakehouse",
+          "subtitle": "午餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "约🚗30min",
+          "itemDuration": "停留1H，11:30出发",
+          "navigationQuery": "74 Main Street, Fairlie 7925新西兰",
+          "navigationLabel": "74 Main Street, Fairlie 7925新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "牛肉块派，牛肉末派，三文鱼培根派，猪肉苹果派，奶油甜甜圈\n最推荐三文鱼派和猪肉苹果派！三文鱼很香，猪肉派很特别。",
+          "reserved": false,
+          "text": "🍔午餐｜Fairlie Bakehouse；约🚗30min；停留1H，11:30出发；牛肉块派，牛肉末派，三文鱼培根派，猪肉苹果派，奶油甜甜圈\n最推荐三文鱼派和猪肉苹果派！三文鱼很香，猪肉派很特别。",
+          "placeId": "fairlie-bakehouse",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-03",
+          "time": "11:40",
+          "type": "attraction",
+          "title": "Geraldine Fairlie Lookout",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗8min",
+          "itemDuration": "停留20min，12:00出发",
+          "navigationQuery": "Geraldine-Fairlie Highway, Geraldine 7987新西兰",
+          "navigationLabel": "Geraldine-Fairlie Highway, Geraldine 7987新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "非常壮观的观景点",
+          "reserved": false,
+          "text": "👀参观｜Geraldine Fairlie Lookout；约🚗8min；停留20min，12:00出发；非常壮观的观景点",
+          "placeId": "geraldine-fairlie-lookout",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-04",
+          "time": "13:30",
+          "type": "attraction",
+          "title": "Rakaia Gorge Scenic Lookout",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "约🚗1.5H",
+          "itemDuration": "停留20min，13:50出发",
+          "navigationQuery": "Geraldine-Fairlie Highway, Geraldine 7987新西兰",
+          "navigationLabel": "Geraldine-Fairlie Highway, Geraldine 7987新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "有干净的公共卫生间可以修整\n有野餐的桌子椅子\n沿着指示牌可以下到蓝湖岸边玩，好看",
+          "reserved": false,
+          "text": "👀参观｜Rakaia Gorge Scenic Lookout；约🚗1.5H；停留20min，13:50出发；有干净的公共卫生间可以修整\n有野餐的桌子椅子\n沿着指示牌可以下到蓝湖岸边玩，好看",
+          "placeId": "rakaia-gorge-scenic-lookout",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-05",
+          "time": "14:50",
+          "type": "check-in",
+          "title": "25 Carradale Avenue",
+          "subtitle": "入住基督城",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "约🚗1H",
+          "itemDuration": "15:00出发",
+          "navigationQuery": "25 Carradale Avenue, Christchurch, Canterbury 8042",
+          "navigationLabel": "25 Carradale Avenue, Christchurch, Canterbury 8042",
+          "costs": {
+            "cny": "915",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "check in",
+          "reserved": false,
+          "text": "🛏️入住基督城｜25 Carradale Avenue；约🚗1H；15:00出发；check in",
+          "placeId": "25-carradale-avenue",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-06",
+          "time": "15:20",
+          "type": "drive",
+          "title": "88 Chester Street East",
+          "subtitle": "停车场",
+          "icon": "🅿️",
+          "displayCategory": "traffic",
+          "routeDuration": "约🚗20min",
+          "itemDuration": "",
+          "navigationQuery": "The Crossing Carpark, 71 Lichfield Street, Christchurch Central City, Christchurch 8011",
+          "navigationLabel": "The Crossing Carpark, 71 Lichfield Street, Christchurch Central City, Christchurch 8011",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "停车流程和国内不一样\n❶ 进闸时一定要先取白色小卡片（图2），取完栏杆才会抬！不是国内扫车牌那种，慢了后面车会狂摁喇叭📣\n❷ 一定要收好卡片，上面有停车时间信息，丢了会麻烦\n❸ 返程先去1层或2层的付款机，插入卡片核对车牌，直接刷卡付款就行\n❹ 付完款卡片左下角会多一行小字，拿着这张卡再去取车驶出就ok啦",
+          "reserved": false,
+          "text": "️🅿️停车场｜88 Chester Street East；约🚗20min；停车流程和国内不一样\n❶ 进闸时一定要先取白色小卡片（图2），取完栏杆才会抬！不是国内扫车牌那种，慢了后面车会狂摁喇叭📣\n❷ 一定要收好卡片，上面有停车时间信息，丢了会麻烦\n❸ 返程先去1层或2层的付款机，插入卡片核对车牌，直接刷卡付款就行\n❹ 付完款卡片左下角会多一行小字，拿着这张卡再去取车驶出就ok啦",
+          "placeId": "88-chester-street-east",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-07",
+          "time": "待定",
+          "type": "attraction",
+          "title": "Cardboard Cathedral",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "停留3.5H",
+          "navigationQuery": "234 Hereford Street, Christchurch Central City, Christchurch 8011新西兰",
+          "navigationLabel": "234 Hereford Street, Christchurch Central City, Christchurch 8011新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "地震后重建的象征性建筑之一。\n阳光透过彩色玻璃洒进来，氛围安静。",
+          "reserved": false,
+          "text": "👀参观｜Cardboard Cathedral；停留3.5H；地震后重建的象征性建筑之一。\n阳光透过彩色玻璃洒进来，氛围安静。",
+          "placeId": "cardboard-cathedral",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-08",
+          "time": "待定",
+          "type": "restaurant",
+          "title": "Miss Saigon 越南粉 pho",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "dining",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "BNZ center, 120, Hereford Street, Christchurch 8011新西兰",
+          "navigationLabel": "BNZ center, 120, Hereford Street, Christchurch 8011新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "味道还可以",
+          "reserved": false,
+          "text": "🍔晚餐｜Miss Saigon 越南粉 pho；味道还可以",
+          "placeId": "miss-saigon-越南粉-pho",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-09",
+          "time": "待定",
+          "type": "attraction",
+          "title": "Bridge of Remembrance",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "Cashel Street, Christchurch Central City, Christchurch 8011新西兰",
+          "navigationLabel": "Cashel Street, Christchurch Central City, Christchurch 8011新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "河水很平静，两边都是树，阳光洒下来特别治愈。可以喂海鸥，也会看到很多人在草地上晒太阳。每隔一段时间基督城的复古小火车就会经过，挺有感觉的。",
+          "reserved": false,
+          "text": "👀参观｜Bridge of Remembrance；河水很平静，两边都是树，阳光洒下来特别治愈。可以喂海鸥，也会看到很多人在草地上晒太阳。每隔一段时间基督城的复古小火车就会经过，挺有感觉的。",
+          "placeId": "bridge-of-remembrance",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-10",
+          "time": "待定",
+          "type": "attraction",
+          "title": "Christchurch Arts Centre",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "2 Worcester Boulevard, Christchurch Central City, Christchurch 8013新西兰",
+          "navigationLabel": "2 Worcester Boulevard, Christchurch Central City, Christchurch 8013新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "这里有一个“悬浮房子”的装置，其实是几何结构搭起来的。找好角度拍照，会有一种房子漂在空中的效果。",
+          "reserved": false,
+          "text": "👀参观｜Christchurch Arts Centre；这里有一个“悬浮房子”的装置，其实是几何结构搭起来的。找好角度拍照，会有一种房子漂在空中的效果。",
+          "placeId": "christchurch-arts-centre",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-11",
+          "time": "待定",
+          "type": "attraction",
+          "title": "Christchurch Botanic Gardens",
+          "subtitle": "参观",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "Rolleston Avenue, Christchurch Central City, Christchurch 8013新西兰",
+          "navigationLabel": "Rolleston Avenue, Christchurch Central City, Christchurch 8013新西兰",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "从艺术中心走出去对面就是，园里有个喷泉，拍照好看。\n在植物园里可以选择划皮划艇或者坐小船，不玩的话单纯散步也很舒服，生态很好，会看到很多小动物。",
+          "reserved": false,
+          "text": "👀参观｜Christchurch Botanic Gardens；从艺术中心走出去对面就是，园里有个喷泉，拍照好看。\n在植物园里可以选择划皮划艇或者坐小船，不玩的话单纯散步也很舒服，生态很好，会看到很多小动物。",
+          "placeId": "christchurch-botanic-gardens",
+          "navigationSource": "excel"
+        },
+        {
+          "id": "d11-12",
+          "time": "19:30",
+          "type": "check-in",
+          "title": "25 Carradale Avenue",
+          "subtitle": "入住基督城",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "🛏️ 入住基督城｜25 Carradale Avenue",
+          "placeId": "25-carradale-avenue"
+        }
+      ],
+      "notes": [
+        "住宿：25 Carradale Avenue, Christchurch, Canterbury 8042"
+      ],
+      "costReferences": [
+        {
+          "item": "🛏️入住基督城",
+          "currency": "原表",
+          "amount": "RMB 915"
+        }
+      ]
+    },
+    {
+      "id": "day-12",
+      "day": 12,
+      "date": "2026-10-06",
+      "sourceDateLabel": "10月6日",
+      "title": "基督城还车，飞新加坡",
+      "locations": [
+        "Christchurch",
+        "Singapore"
+      ],
+      "schedule": [
+        {
+          "id": "d12-01",
+          "time": "08:00",
+          "type": "check-out",
+          "title": "Christchurch",
+          "subtitle": "退房出发",
+          "icon": "🛏",
+          "displayCategory": "lodging",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "建议 8:30 前到机场还车",
+          "reserved": false,
+          "text": "退房出发｜Christchurch；建议 8:30 前到机场还车",
+          "placeId": "christchurch"
+        },
+        {
+          "id": "d12-02",
+          "time": "08:30",
+          "type": "drive",
+          "title": "Christchurch Airport",
+          "subtitle": "还车+值机",
+          "icon": "🚗",
+          "displayCategory": "traffic",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "预留还车、托运行李和安检时间",
+          "reserved": false,
+          "text": "还车+值机｜Christchurch Airport；预留还车、托运行李和安检时间",
+          "placeId": "christchurch-airport"
+        },
+        {
+          "id": "d12-03",
+          "time": "11:50",
+          "type": "flight",
+          "title": "SQ298 基督城国际 → 新加坡樟宜",
+          "subtitle": "飞新加坡",
+          "icon": "✈️",
+          "displayCategory": "traffic",
+          "routeDuration": "约10H50",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "17:40 抵达新加坡樟宜",
+          "reserved": false,
+          "text": "飞新加坡｜SQ298 基督城国际 → 新加坡樟宜；约10H50；17:40 抵达新加坡樟宜"
+        },
+        {
+          "id": "d12-04",
+          "time": "17:40",
+          "type": "flight",
+          "title": "新加坡樟宜",
+          "subtitle": "抵达中转",
+          "icon": "✈️",
+          "displayCategory": "traffic",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "",
+          "reserved": false,
+          "text": "✈️抵达中转｜新加坡樟宜",
+          "placeId": "新加坡樟宜"
+        },
+        {
+          "id": "d12-05",
+          "time": "待定",
+          "type": "restaurant",
+          "title": "樟宜机场Jewel",
+          "subtitle": "晚餐",
+          "icon": "🍽️",
+          "displayCategory": "traffic",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "Tambuah Mas：位于Jewel三楼的印尼餐厅，是家米其林推荐",
+          "reserved": false,
+          "text": "🍔晚餐｜樟宜机场Jewel；Tambuah Mas：位于Jewel三楼的印尼餐厅，是家米其林推荐",
+          "placeId": "樟宜机场jewel"
+        },
+        {
+          "id": "d12-06",
+          "time": "21:00",
+          "type": "check-in",
+          "title": "Changi Airport",
+          "subtitle": "休整",
+          "icon": "🛏",
+          "displayCategory": "traffic",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "如体力很好，可选短暂进市区；否则机场最稳",
+          "reserved": false,
+          "text": "🛏️休整｜Changi Airport；如体力很好，可选短暂进市区；否则机场最稳",
+          "placeId": "changi-airport"
+        }
+      ],
+      "notes": [
+        "住宿：机上"
+      ],
+      "costReferences": []
+    },
+    {
+      "id": "day-13",
+      "day": 13,
+      "date": "2026-10-07",
+      "sourceDateLabel": "10月7日",
+      "title": "新加坡转机，抵达上海",
+      "locations": [
+        "Singapore",
+        "Shanghai"
+      ],
+      "schedule": [
+        {
+          "id": "d13-01",
+          "time": "01:15",
+          "type": "flight",
+          "title": "SQ826 新加坡樟宜 T3 → 上海浦东 T2",
+          "subtitle": "飞上海",
+          "icon": "✈️",
+          "displayCategory": "traffic",
+          "routeDuration": "约5H20",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "深夜航班，提前回到登机口",
+          "reserved": false,
+          "text": "飞上海｜SQ826 新加坡樟宜 T3 → 上海浦东 T2；约5H20；深夜航班，提前回到登机口"
+        },
+        {
+          "id": "d13-02",
+          "time": "06:35",
+          "type": "attraction",
+          "title": "上海浦东 T2",
+          "subtitle": "抵达上海",
+          "icon": "🎯",
+          "displayCategory": "activity",
+          "routeDuration": "",
+          "itemDuration": "",
+          "navigationQuery": "",
+          "navigationLabel": "",
+          "costs": {
+            "cny": "",
+            "nzd": "",
+            "usd": ""
+          },
+          "note": "完整行程结束",
+          "reserved": false,
+          "text": "抵达上海｜上海浦东 T2；完整行程结束",
+          "placeId": "上海浦东-t2"
+        }
+      ],
+      "notes": [],
+      "costReferences": []
+    }
+  ],
+  "places": [
+    {
+      "id": "上海浦东-t2",
+      "name": "上海浦东 T2",
+      "nameZh": "上海浦东 T2",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "上海浦东 T2"
+      }
+    },
+    {
+      "id": "新加坡樟宜",
+      "name": "新加坡樟宜",
+      "nameZh": "新加坡樟宜",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "新加坡樟宜"
+      }
+    },
+    {
+      "id": "ibis-singapore-on-bencoolen",
+      "name": "Ibis Singapore on Bencoolen",
+      "nameZh": "Ibis Singapore on Bencoolen",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Ibis Singapore on Bencoolen"
+      }
+    },
+    {
+      "id": "亚坤kaya-toast",
+      "name": "亚坤Kaya Toast",
+      "nameZh": "亚坤Kaya Toast",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "亚坤Kaya Toast"
+      }
+    },
+    {
+      "id": "鱼尾狮公园",
+      "name": "鱼尾狮公园",
+      "nameZh": "鱼尾狮公园",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "鱼尾狮公园"
+      }
+    },
+    {
+      "id": "新加坡国家美术馆",
+      "name": "新加坡国家美术馆",
+      "nameZh": "新加坡国家美术馆",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "新加坡国家美术馆"
+      }
+    },
+    {
+      "id": "娘惹餐厅",
+      "name": "娘惹餐厅",
+      "nameZh": "娘惹餐厅",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "娘惹餐厅"
+      }
+    },
+    {
+      "id": "旧禧街彩虹警察局",
+      "name": "旧禧街彩虹警察局",
+      "nameZh": "旧禧街彩虹警察局",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "旧禧街彩虹警察局"
+      }
+    },
+    {
+      "id": "克拉码头",
+      "name": "克拉码头",
+      "nameZh": "克拉码头",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "克拉码头"
+      }
+    },
+    {
+      "id": "福康宁公园绿地",
+      "name": "福康宁公园绿地",
+      "nameZh": "福康宁公园绿地",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "福康宁公园绿地"
+      }
+    },
+    {
+      "id": "福康宁公园树洞",
+      "name": "福康宁公园树洞",
+      "nameZh": "福康宁公园树洞",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "福康宁公园树洞"
+      }
+    },
+    {
+      "id": "新加坡樟宜-t3",
+      "name": "新加坡樟宜 T3",
+      "nameZh": "新加坡樟宜 T3",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "新加坡樟宜 T3"
+      }
+    },
+    {
+      "id": "樟宜机场jewel",
+      "name": "樟宜机场Jewel",
+      "nameZh": "樟宜机场Jewel",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "樟宜机场Jewel"
+      }
+    },
+    {
+      "id": "基督城",
+      "name": "基督城",
+      "nameZh": "基督城",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "基督城"
+      }
+    },
+    {
+      "id": "sunson-asian-food-market-wigram-停车场",
+      "name": "Sunson Asian Food Market (Wigram) 停车场",
+      "nameZh": "Sunson Asian Food Market (Wigram) 停车场",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Sunson Asian Food Market (Wigram)"
+      }
+    },
+    {
+      "id": "晋丰小馆-best-wok-restaurant",
+      "name": "晋丰小馆 Best Wok Restaurant",
+      "nameZh": "晋丰小馆 Best Wok Restaurant",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "晋丰小馆 Best Wok Restaurant"
+      }
+    },
+    {
+      "id": "sunson-asian-food-market-wigram",
+      "name": "Sunson Asian Food Market (Wigram)",
+      "nameZh": "Sunson Asian Food Market (Wigram)",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Sunson Asian Food Market (Wigram)"
+      }
+    },
+    {
+      "id": "jellicoe度假屋",
+      "name": "Jellicoe度假屋",
+      "nameZh": "Jellicoe度假屋",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "34D Jellicoe Street, Timaru, Canterbury Region 7910"
+      }
+    },
+    {
+      "id": "public-parking",
+      "name": "Public parking",
+      "nameZh": "Public parking",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "State Highway 78, Timaru Port, Timaru 7910新西兰"
+      }
+    },
+    {
+      "id": "sukhothai-thai-restaurant-bar",
+      "name": "Sukhothai Thai Restaurant & Bar",
+      "nameZh": "Sukhothai Thai Restaurant & Bar",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Sukhothai Thai Restaurant & Bar"
+      }
+    },
+    {
+      "id": "timaru-little-blue-penguins",
+      "name": "timaru little blue penguins",
+      "nameZh": "timaru little blue penguins",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "timaru little blue penguins"
+      }
+    },
+    {
+      "id": "real-milk-timaru",
+      "name": "Real Milk Timaru",
+      "nameZh": "Real Milk Timaru",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Real Milk Timaru"
+      }
+    },
+    {
+      "id": "蒸汽朋克博物馆-steampunk-hq",
+      "name": "蒸汽朋克博物馆 Steampunk HQ",
+      "nameZh": "蒸汽朋克博物馆 Steampunk HQ",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "1 Humber Street, Oamaru 9400新西兰"
+      }
+    },
+    {
+      "id": "维多利亚遗迹区-oamaru-s-heritage-precinct",
+      "name": "维多利亚遗迹区 Oamaru's Heritage Precinct",
+      "nameZh": "维多利亚遗迹区 Oamaru's Heritage Precinct",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "维多利亚遗迹区 Oamaru's Heritage Precinct"
+      }
+    },
+    {
+      "id": "star-and-garter-restaurant",
+      "name": "Star and Garter Restaurant",
+      "nameZh": "Star and Garter Restaurant",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Star and Garter Restaurant"
+      }
+    },
+    {
+      "id": "harbourside-car-park",
+      "name": "Harbourside Car Park",
+      "nameZh": "Harbourside Car Park",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Harbourside Car Park"
+      }
+    },
+    {
+      "id": "oamaru-lookout-point",
+      "name": "Oamaru Lookout Point",
+      "nameZh": "Oamaru Lookout Point",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Oamaru Lookout Point"
+      }
+    },
+    {
+      "id": "katiki-point-lighthouse",
+      "name": "Katiki Point Lighthouse",
+      "nameZh": "Katiki Point Lighthouse",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Katiki Point Lighthouse"
+      }
+    },
+    {
+      "id": "sandfly-bay",
+      "name": "Sandfly Bay",
+      "nameZh": "Sandfly Bay",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Seal Point Road"
+      }
+    },
+    {
+      "id": "sea-salt-b-b",
+      "name": "Sea Salt B&B",
+      "nameZh": "Sea Salt B&B",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "18A Motu Street, Dunedin, Otago 9012"
+      }
+    },
+    {
+      "id": "woolworths-pharmacy-dunedin-central",
+      "name": "Woolworths Pharmacy Dunedin Central",
+      "nameZh": "Woolworths Pharmacy Dunedin Central",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Woolworths Pharmacy Dunedin Central"
+      }
+    },
+    {
+      "id": "prohibition-smokehouse",
+      "name": "Prohibition Smokehouse",
+      "nameZh": "Prohibition Smokehouse",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Prohibition Smokehouse"
+      }
+    },
+    {
+      "id": "tunnel-beach",
+      "name": "Tunnel Beach",
+      "nameZh": "Tunnel Beach",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Tunnel Beach"
+      }
+    },
+    {
+      "id": "rising-sun-dumplings-restaurant",
+      "name": "Rising Sun Dumplings Restaurant",
+      "nameZh": "Rising Sun Dumplings Restaurant",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "NZ/231 Moray Place, Central Dunedin, Dunedin 9016新西兰"
+      }
+    },
+    {
+      "id": "citywalk",
+      "name": "citywalk",
+      "nameZh": "citywalk",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "citywalk"
+      }
+    },
+    {
+      "id": "tina-maria",
+      "name": "Tina Maria",
+      "nameZh": "Tina Maria",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "13 Poole Lane, Queenstown, Otago Region 9300"
+      }
+    },
+    {
+      "id": "saigon-kingdom",
+      "name": "Saigon Kingdom",
+      "nameZh": "Saigon Kingdom",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "88 Beach Street, Queenstown 9300新西兰"
+      }
+    },
+    {
+      "id": "冰吧",
+      "name": "🍷冰吧",
+      "nameZh": "🍷冰吧",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "🍷冰吧"
+      }
+    },
+    {
+      "id": "婚纱店",
+      "name": "婚纱店",
+      "nameZh": "婚纱店",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "10 Avalon Cresent., Fernhill, Queenstown"
+      }
+    },
+    {
+      "id": "滑翔伞",
+      "name": "滑翔伞",
+      "nameZh": "滑翔伞",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "滑翔伞"
+      }
+    },
+    {
+      "id": "bella-cucina",
+      "name": "Bella Cucina",
+      "nameZh": "Bella Cucina",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Bella Cucina, 6 Brecon Street, Queenstown 9300"
+      }
+    },
+    {
+      "id": "湖边-花园慢逛",
+      "name": "湖边+花园慢逛",
+      "nameZh": "湖边+花园慢逛",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "湖边+花园慢逛"
+      }
+    },
+    {
+      "id": "小镇文艺逛吃",
+      "name": "小镇文艺逛吃",
+      "nameZh": "小镇文艺逛吃",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "小镇文艺逛吃"
+      }
+    },
+    {
+      "id": "伴手礼店",
+      "name": "伴手礼店",
+      "nameZh": "伴手礼店",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "伴手礼店"
+      }
+    },
+    {
+      "id": "skyline-缆车上山-luge滑板车",
+      "name": "skyline 缆车上山 + Luge滑板车",
+      "nameZh": "skyline 缆车上山 + Luge滑板车",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "skyline 缆车上山 + Luge滑板车"
+      }
+    },
+    {
+      "id": "skyline-缆车下山",
+      "name": "skyline 缆车下山",
+      "nameZh": "skyline 缆车下山",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "skyline 缆车下山"
+      }
+    },
+    {
+      "id": "flame-bar-grill",
+      "name": "Flame Bar & Grill",
+      "nameZh": "Flame Bar & Grill",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Flame Bar & Grill"
+      }
+    },
+    {
+      "id": "婚礼",
+      "name": "婚礼",
+      "nameZh": "婚礼",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "婚礼"
+      }
+    },
+    {
+      "id": "米尔福德峡湾",
+      "name": "米尔福德峡湾",
+      "nameZh": "米尔福德峡湾",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "米尔福德峡湾"
+      }
+    },
+    {
+      "id": "ferburger",
+      "name": "Ferburger",
+      "nameZh": "Ferburger",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Ferburger"
+      }
+    },
+    {
+      "id": "arrowtown-wine-store",
+      "name": "Arrowtown Wine Store",
+      "nameZh": "Arrowtown Wine Store",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Arrowtown Wine Store"
+      }
+    },
+    {
+      "id": "patagonia-ice-cream",
+      "name": "Patagonia ice cream",
+      "nameZh": "Patagonia ice cream",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Patagonia ice cream"
+      }
+    },
+    {
+      "id": "wolf-coffee-roasters",
+      "name": "Wolf Coffee Roasters",
+      "nameZh": "Wolf Coffee Roasters",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Wolf Coffee Roasters"
+      }
+    },
+    {
+      "id": "windy-ridge",
+      "name": "Windy Ridge",
+      "nameZh": "Windy Ridge",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Windy Ridge"
+      }
+    },
+    {
+      "id": "golden-fleece",
+      "name": "Golden Fleece",
+      "nameZh": "Golden Fleece",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Golden Fleece"
+      }
+    },
+    {
+      "id": "provisions-of-arrowtown",
+      "name": "Provisions of Arrowtown",
+      "nameZh": "Provisions of Arrowtown",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "65 Buckingham Street, Arrowtown 9302新西兰"
+      }
+    },
+    {
+      "id": "arrow-junction-lookout-point",
+      "name": "Arrow Junction Lookout Point",
+      "nameZh": "Arrow Junction Lookout Point",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Crown Range Road, Arrow Junction 9371新西兰"
+      }
+    },
+    {
+      "id": "crown-range-scenic-lookout",
+      "name": "Crown Range Scenic Lookout",
+      "nameZh": "Crown Range Scenic Lookout",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Roaring Meg 9384新西兰"
+      }
+    },
+    {
+      "id": "crown-range-summit",
+      "name": "Crown Range Summit",
+      "nameZh": "Crown Range Summit",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Crown Range Road, Roaring Meg 9384新西兰"
+      }
+    },
+    {
+      "id": "wanaka-hill-park-look-out",
+      "name": "wanaka hill park look out",
+      "nameZh": "wanaka hill park look out",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Wānaka 9305新西兰"
+      }
+    },
+    {
+      "id": "flora-dora-parad",
+      "name": "Flora Dora Parad",
+      "nameZh": "Flora Dora Parad",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Lake Hāwea 9382新西兰"
+      }
+    },
+    {
+      "id": "wanaka-station-park",
+      "name": "Wanaka Station Park",
+      "nameZh": "Wanaka Station Park",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "62 Wanaka Mount Aspiring Road, Wānaka 9305新西兰"
+      }
+    },
+    {
+      "id": "that-wanaka-tree孤独的树",
+      "name": "That Wanaka Tree孤独的树",
+      "nameZh": "That Wanaka Tree孤独的树",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Roys Bay 59 Wanaka Mount Aspiring Road, Wānaka 9305新西兰"
+      }
+    },
+    {
+      "id": "网红大树",
+      "name": "网红大树",
+      "nameZh": "网红大树",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "网红大树"
+      }
+    },
+    {
+      "id": "edgewater-草坪",
+      "name": "Edgewater 草坪",
+      "nameZh": "Edgewater 草坪",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Edgewater 草坪"
+      }
+    },
+    {
+      "id": "34a-packer-road",
+      "name": "34A Packer Road",
+      "nameZh": "34A Packer Road",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "34A Packer Road, Wānaka, Otago Region 9382"
+      }
+    },
+    {
+      "id": "kika",
+      "name": "Kika",
+      "nameZh": "Kika",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Kika"
+      }
+    },
+    {
+      "id": "wanaka",
+      "name": "Wanaka",
+      "nameZh": "Wanaka",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Wanaka"
+      }
+    },
+    {
+      "id": "lindis-pass-viewpoint",
+      "name": "Lindis Pass Viewpoint",
+      "nameZh": "Lindis Pass Viewpoint",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Lindis Pass 9383新西兰"
+      }
+    },
+    {
+      "id": "ahuriri-river-lookout",
+      "name": "Ahuriri River Lookout",
+      "nameZh": "Ahuriri River Lookout",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Omarama-Lindis Pass Road, Omarama 9412新西兰"
+      }
+    },
+    {
+      "id": "lake-ruataniwha-view-point",
+      "name": "Lake Ruataniwha View Point",
+      "nameZh": "Lake Ruataniwha View Point",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "2609 Twizel-Omarama Road, Glenbrook 7999新西兰"
+      }
+    },
+    {
+      "id": "mt-cook-alpine-salmon-shop",
+      "name": "Mt Cook Alpine Salmon Shop🐟",
+      "nameZh": "Mt Cook Alpine Salmon Shop🐟",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Lake Pukaki Information Centre, Pukaki 7999新西兰"
+      }
+    },
+    {
+      "id": "peter-s-lookout",
+      "name": "Peter's lookout",
+      "nameZh": "Peter's lookout",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Ben Ohau 7999新西兰"
+      }
+    },
+    {
+      "id": "lake-pukaki-beach-lookout",
+      "name": "Lake Pukaki Beach Lookout",
+      "nameZh": "Lake Pukaki Beach Lookout",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "W4WP+P4, Ben Ohau 7999新西兰"
+      }
+    },
+    {
+      "id": "格兰特岚德观景台",
+      "name": "格兰特岚德观景台",
+      "nameZh": "格兰特岚德观景台",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "State Highway 80, Glentanner 7999新西兰"
+      }
+    },
+    {
+      "id": "hermitage---tasman-clacier-car-park",
+      "name": "Hermitage - tasman clacier car park",
+      "nameZh": "Hermitage - tasman clacier car park",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Tasman Valley Road, Mount Cook National Park 7999新西兰"
+      }
+    },
+    {
+      "id": "tasman-glacier-塔斯曼冰川步道",
+      "name": "Tasman Glacier 塔斯曼冰川步道",
+      "nameZh": "Tasman Glacier 塔斯曼冰川步道",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Tasman Glacier 塔斯曼冰川步道"
+      }
+    },
+    {
+      "id": "35-tasman-road",
+      "name": "35 Tasman Road",
+      "nameZh": "35 Tasman Road",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "35 Tasman Road, Twizel, Canterbury Region 7901"
+      }
+    },
+    {
+      "id": "air-safaris",
+      "name": "air Safaris",
+      "nameZh": "air Safaris",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Tekapo airport state highway 8 Lake tekapo 7999 P16"
+      }
+    },
+    {
+      "id": "astro-café",
+      "name": "Astro Café",
+      "nameZh": "Astro Café",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Godley Peaks Road, Lake Tekapo 7945新西兰"
+      }
+    },
+    {
+      "id": "lake-mcgregor-view-point",
+      "name": "Lake McGregor view point",
+      "nameZh": "Lake McGregor view point",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "157 Lake Alexandrina Road, Tekapo 7999新西兰"
+      }
+    },
+    {
+      "id": "lake-alexandrina",
+      "name": "Lake Alexandrina",
+      "nameZh": "Lake Alexandrina",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "157 Lake Alexandrina Road, Tekapo 7999新西兰"
+      }
+    },
+    {
+      "id": "the-better-batter",
+      "name": "The Better Batter",
+      "nameZh": "The Better Batter",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "The Better Batter"
+      }
+    },
+    {
+      "id": "church-of-the-good-shepherd-好牧羊人教堂",
+      "name": "Church of the Good Shepherd 好牧羊人教堂",
+      "nameZh": "Church of the Good Shepherd 好牧羊人教堂",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Church of the Good Shepherd 好牧羊人教堂"
+      }
+    },
+    {
+      "id": "mt-john-track沿湖段",
+      "name": "Mt. John Track沿湖段",
+      "nameZh": "Mt. John Track沿湖段",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Mt. John Track沿湖段"
+      }
+    },
+    {
+      "id": "mackenzies-bar-grill-18-00",
+      "name": "Mackenzies Bar & Grill 18:00",
+      "nameZh": "Mackenzies Bar & Grill 18:00",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Mackenzies Bar & Grill 18:00"
+      }
+    },
+    {
+      "id": "64-murray-place",
+      "name": "64 Murray Place",
+      "nameZh": "64 Murray Place",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "64 Murray Place"
+      }
+    },
+    {
+      "id": "1-chameleonstargazing-90分钟-109nzd-2-dark-sky-project-2",
+      "name": "1.chameleonstargazing：90分钟，109nzd 2.dark sky project：2小时,209 nzd 需提前预定",
+      "nameZh": "1.chameleonstargazing：90分钟，109nzd 2.dark sky project：2小时,209 nzd 需提前预定",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "1.chameleonstargazing：90分钟，109nzd 2.dark sky project：2小时,209 nzd 需提前预定"
+      }
+    },
+    {
+      "id": "fairlie-bakehouse",
+      "name": "Fairlie Bakehouse",
+      "nameZh": "Fairlie Bakehouse",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "74 Main Street, Fairlie 7925新西兰"
+      }
+    },
+    {
+      "id": "geraldine-fairlie-lookout",
+      "name": "Geraldine Fairlie Lookout",
+      "nameZh": "Geraldine Fairlie Lookout",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Geraldine-Fairlie Highway, Geraldine 7987新西兰"
+      }
+    },
+    {
+      "id": "rakaia-gorge-scenic-lookout",
+      "name": "Rakaia Gorge Scenic Lookout",
+      "nameZh": "Rakaia Gorge Scenic Lookout",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Geraldine-Fairlie Highway, Geraldine 7987新西兰"
+      }
+    },
+    {
+      "id": "25-carradale-avenue",
+      "name": "25 Carradale Avenue",
+      "nameZh": "25 Carradale Avenue",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "25 Carradale Avenue, Christchurch, Canterbury 8042"
+      }
+    },
+    {
+      "id": "88-chester-street-east",
+      "name": "88 Chester Street East",
+      "nameZh": "88 Chester Street East",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "The Crossing Carpark, 71 Lichfield Street, Christchurch Central City, Christchurch 8011"
+      }
+    },
+    {
+      "id": "cardboard-cathedral",
+      "name": "Cardboard Cathedral",
+      "nameZh": "Cardboard Cathedral",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "234 Hereford Street, Christchurch Central City, Christchurch 8011新西兰"
+      }
+    },
+    {
+      "id": "miss-saigon-越南粉-pho",
+      "name": "Miss Saigon 越南粉 pho",
+      "nameZh": "Miss Saigon 越南粉 pho",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "BNZ center, 120, Hereford Street, Christchurch 8011新西兰"
+      }
+    },
+    {
+      "id": "bridge-of-remembrance",
+      "name": "Bridge of Remembrance",
+      "nameZh": "Bridge of Remembrance",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Cashel Street, Christchurch Central City, Christchurch 8011新西兰"
+      }
+    },
+    {
+      "id": "christchurch-arts-centre",
+      "name": "Christchurch Arts Centre",
+      "nameZh": "Christchurch Arts Centre",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "2 Worcester Boulevard, Christchurch Central City, Christchurch 8013新西兰"
+      }
+    },
+    {
+      "id": "christchurch-botanic-gardens",
+      "name": "Christchurch Botanic Gardens",
+      "nameZh": "Christchurch Botanic Gardens",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Rolleston Avenue, Christchurch Central City, Christchurch 8013新西兰"
+      }
+    },
+    {
+      "id": "christchurch",
+      "name": "Christchurch",
+      "nameZh": "Christchurch",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Christchurch"
+      }
+    },
+    {
+      "id": "christchurch-airport",
+      "name": "Christchurch Airport",
+      "nameZh": "Christchurch Airport",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Christchurch Airport"
+      }
+    },
+    {
+      "id": "changi-airport",
+      "name": "Changi Airport",
+      "nameZh": "Changi Airport",
+      "cityOrArea": "",
+      "navigation": {
+        "query": "Changi Airport"
+      }
+    }
+  ],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票和预订状态只保存在当前浏览器。",
+    "items": [
+      {
+        "id": "ticket-national-kitchen",
+        "day": 2,
+        "category": "restaurant-booking",
+        "name": "National Kitchen by Violet Oon 午餐预订",
+        "requirement": "advance-recommended",
+        "guidance": [
+          "表格标记需提前预定，时间段 12:00-17:00 / 18:00-22:30"
+        ],
+        "scheduleMatchTerms": [
+          "娘惹餐厅",
+          "National Kitchen"
+        ]
+      },
+      {
+        "id": "ticket-star-garter",
+        "day": 4,
+        "category": "restaurant-booking",
+        "name": "Star and Garter Restaurant 午餐",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "purchased",
+        "guidance": [
+          "表格已打勾"
+        ],
+        "scheduleMatchTerms": [
+          "Star and Garter"
+        ]
+      },
+      {
+        "id": "ticket-saigon-kingdom",
+        "day": 5,
+        "category": "restaurant-booking",
+        "name": "Saigon Kingdom 晚餐",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "purchased",
+        "guidance": [
+          "表格已打勾"
+        ],
+        "scheduleMatchTerms": [
+          "Saigon Kingdom"
+        ]
+      },
+      {
+        "id": "ticket-ice-bar",
+        "day": 5,
+        "category": "activity-booking",
+        "name": "Queenstown Ice Bar",
+        "requirement": "advance-recommended",
+        "guidance": [
+          "@老柴夫妇预定，需确认 21:00 / 22:00 场次"
+        ],
+        "officialUrl": "https://queenstownicebar.com/bookings/",
+        "scheduleMatchTerms": [
+          "冰吧",
+          "Ice Bar"
+        ]
+      },
+      {
+        "id": "ticket-bella-cucina",
+        "day": 6,
+        "category": "restaurant-booking",
+        "name": "Bella Cucina 午餐",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "purchased",
+        "guidance": [
+          "表格标记已预约"
+        ],
+        "officialUrl": "https://booking.nowbookit.com/booking?accountid=c3b945a4-7a46-4fd7-972a-842cdb54d331&venueid=1897&theme=light&accent=32,149,242",
+        "scheduleMatchTerms": [
+          "Bella Cucina"
+        ]
+      },
+      {
+        "id": "ticket-skyline-luge",
+        "day": 6,
+        "category": "ticket",
+        "name": "Skyline 缆车 + Luge",
+        "requirement": "advance-required",
+        "guidance": [
+          "建议提前一天购买；4:30 前上缆车"
+        ],
+        "officialUrl": "https://queenstown.skyline.co.nz/",
+        "scheduleMatchTerms": [
+          "skyline",
+          "Luge",
+          "缆车"
+        ]
+      },
+      {
+        "id": "ticket-flame",
+        "day": 6,
+        "category": "restaurant-booking",
+        "name": "Flame Bar & Grill 晚餐",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "purchased",
+        "guidance": [
+          "表格已打勾，可看 First Table / 官网预订"
+        ],
+        "officialUrl": "https://www.flamegrill.co.nz/reservation",
+        "scheduleMatchTerms": [
+          "Flame Bar"
+        ]
+      },
+      {
+        "id": "ticket-kika",
+        "day": 8,
+        "category": "restaurant-booking",
+        "name": "Kika 晚餐",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "purchased",
+        "guidance": [
+          "表格已打勾，可确认预订"
+        ],
+        "officialUrl": "https://kika.nz/bookings/",
+        "scheduleMatchTerms": [
+          "Kika"
+        ]
+      },
+      {
+        "id": "ticket-air-safaris",
+        "day": 10,
+        "category": "ticket",
+        "name": "Air Safaris 飞行体验",
+        "requirement": "advance-required",
+        "guidance": [
+          "提前 15 分钟 check in；飞行约 50 分钟"
+        ],
+        "scheduleMatchTerms": [
+          "air Safaris",
+          "Air Safaris"
+        ]
+      },
+      {
+        "id": "ticket-stargazing",
+        "day": 10,
+        "category": "ticket",
+        "name": "Lake Tekapo 观星",
+        "requirement": "advance-required",
+        "guidance": [
+          "Chameleon Stargazing 或 Dark Sky Project，提前 30 分钟"
+        ],
+        "scheduleMatchTerms": [
+          "观星",
+          "chameleonstargazing",
+          "dark sky"
+        ]
+      },
+      {
+        "id": "ticket-mackenzies",
+        "day": 10,
+        "category": "restaurant-booking",
+        "name": "Mackenzies Bar & Grill 晚餐",
+        "requirement": "advance-recommended",
+        "purchaseStatus": "purchased",
+        "guidance": [
+          "表格已打勾，石板牛排需预约"
+        ],
+        "scheduleMatchTerms": [
+          "Mackenzies"
+        ]
+      }
+    ]
+  },
+  "preTrip": {
+    "todoGroups": [
+      {
+        "id": "all",
+        "label": "ALL",
+        "name": "共同准备"
+      },
+      {
+        "id": "snow",
+        "label": "🍽️ & ❄️",
+        "name": "餐饮与雪线准备"
+      },
+      {
+        "id": "mountain",
+        "label": "⛰️",
+        "name": "山路自驾"
+      },
+      {
+        "id": "music",
+        "label": "🎓",
+        "name": "朋友补充"
+      }
+    ],
+    "packingItems": [
+      {
+        "id": "todo-01",
+        "groupId": "all",
+        "text": "新加坡入境前 3 天填写入境卡",
+        "completed": false
+      },
+      {
+        "id": "todo-02",
+        "groupId": "all",
+        "text": "下载 Grab，方便新加坡打车",
+        "completed": false
+      },
+      {
+        "id": "todo-03",
+        "groupId": "all",
+        "text": "手机开通国际漫游",
+        "completed": false
+      },
+      {
+        "id": "todo-04",
+        "groupId": "all",
+        "text": "准备 Visa / 国际信用卡",
+        "completed": false
+      },
+      {
+        "id": "todo-05",
+        "groupId": "all",
+        "text": "取车随身带驾照原件、NZTA 认证翻译件或小白本、信用卡、提车单",
+        "completed": false
+      },
+      {
+        "id": "todo-06",
+        "groupId": "all",
+        "text": "确认 Ice Bar、Air Safaris、Lake Tekapo 观星项目的最终场次",
+        "completed": false
+      },
+      {
+        "id": "todo-07",
+        "groupId": "all",
+        "text": "自驾前下载 Waze、Google Maps、Gaspy",
+        "completed": false
+      },
+      {
+        "id": "todo-08",
+        "groupId": "all",
+        "text": "准备黑布遮盖后备箱行李",
+        "completed": false
+      }
+    ],
+    "preparationsExplicitlyMentioned": [
+      "新加坡入境准备",
+      "新西兰取车证件",
+      "自驾 App 与行李遮盖"
+    ],
+    "missingNote": ""
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "行程卡片导航按钮仅来自表格“导航”列或用户编辑；路线地图仍可使用关键地点生成。",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [
+    "9月30日皇后镇部分行程按表格保留了分组选择。",
+    "10月1日同时存在婚礼日与米尔福德峡湾备选行程，已按原表保留。",
+    "部分餐厅和活动虽然表格打勾，仍建议出发前核对最终预订状态。"
+  ],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "defaultRegionId": "new-zealand",
+    "disclaimer": "本图为旅行路线示意；新加坡为城市停留，新西兰南岛为自驾路线。实际导航请以当天 Google Maps 为准。",
+    "regions": [
+      {
+        "id": "singapore",
+        "label": "新加坡",
+        "countryCode": "SG",
+        "countryCodes": [
+          "SG"
+        ],
+        "heading": "SINGAPORE / 中转停留",
+        "description": "樟宜机场、Bencoolen、市区步行与返程转机的城市路线示意。"
+      },
+      {
+        "id": "new-zealand",
+        "label": "新西兰南岛",
+        "countryCode": "NZ",
+        "countryCodes": [
+          "NZ"
+        ],
+        "heading": "NEW ZEALAND / 南岛自驾",
+        "description": "基督城取还车，途经 Timaru、Oamaru、Dunedin、Queenstown、Wanaka、Aoraki / Mount Cook 与 Lake Tekapo。"
+      }
+    ],
+    "places": [
+      {
+        "id": "sin-airport",
+        "name": "Singapore Changi Airport",
+        "nameZh": "樟宜机场",
+        "countryCode": "SG",
+        "mapRegionId": "singapore",
+        "geo": {
+          "lat": 1.3644,
+          "lng": 103.9915
+        },
+        "query": "Singapore Changi Airport",
+        "overview": true,
+        "labelOffset": {
+          "x": -24,
+          "y": -18
+        }
+      },
+      {
+        "id": "bencoolen",
+        "name": "Bencoolen",
+        "nameZh": "明古连",
+        "countryCode": "SG",
+        "mapRegionId": "singapore",
+        "geo": {
+          "lat": 1.3009,
+          "lng": 103.8522
+        },
+        "query": "Bencoolen, Singapore",
+        "overview": true,
+        "labelOffset": {
+          "x": -24,
+          "y": -24
+        }
+      },
+      {
+        "id": "yakun",
+        "name": "Ya Kun Kaya Toast",
+        "nameZh": "亚坤",
+        "countryCode": "SG",
+        "mapRegionId": "singapore",
+        "geo": {
+          "lat": 1.3009,
+          "lng": 103.855
+        },
+        "query": "Ya Kun Kaya Toast Singapore",
+        "overview": false,
+        "labelOffset": {
+          "x": 24,
+          "y": -28
+        }
+      },
+      {
+        "id": "national-gallery",
+        "name": "National Gallery Singapore",
+        "nameZh": "新加坡国家美术馆",
+        "countryCode": "SG",
+        "mapRegionId": "singapore",
+        "geo": {
+          "lat": 1.2903,
+          "lng": 103.8519
+        },
+        "query": "National Gallery Singapore",
+        "overview": true,
+        "labelOffset": {
+          "x": -24,
+          "y": 44
+        }
+      },
+      {
+        "id": "merlion",
+        "name": "Merlion Park",
+        "nameZh": "鱼尾狮公园",
+        "countryCode": "SG",
+        "mapRegionId": "singapore",
+        "geo": {
+          "lat": 1.2868,
+          "lng": 103.8545
+        },
+        "query": "Merlion Park Singapore",
+        "overview": true,
+        "labelOffset": {
+          "x": 28,
+          "y": -24
+        }
+      },
+      {
+        "id": "clarke-quay",
+        "name": "Clarke Quay",
+        "nameZh": "克拉码头",
+        "countryCode": "SG",
+        "mapRegionId": "singapore",
+        "geo": {
+          "lat": 1.2906,
+          "lng": 103.8465
+        },
+        "query": "Clarke Quay Singapore",
+        "overview": true,
+        "labelOffset": {
+          "x": 24,
+          "y": 34
+        }
+      },
+      {
+        "id": "fort-canning",
+        "name": "Fort Canning Park",
+        "nameZh": "福康宁公园",
+        "countryCode": "SG",
+        "mapRegionId": "singapore",
+        "geo": {
+          "lat": 1.294,
+          "lng": 103.8465
+        },
+        "query": "Fort Canning Park Singapore",
+        "overview": false,
+        "labelOffset": {
+          "x": -24,
+          "y": -28
+        }
+      },
+      {
+        "id": "jewel",
+        "name": "Jewel Changi",
+        "nameZh": "星耀樟宜",
+        "countryCode": "SG",
+        "mapRegionId": "singapore",
+        "geo": {
+          "lat": 1.3602,
+          "lng": 103.9896
+        },
+        "query": "Jewel Changi Airport Singapore",
+        "overview": true,
+        "labelOffset": {
+          "x": -24,
+          "y": -18
+        }
+      },
+      {
+        "id": "chc-airport",
+        "name": "Christchurch Airport",
+        "nameZh": "基督城机场",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -43.4894,
+          "lng": 172.5322
+        },
+        "query": "Christchurch Airport, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": 24,
+          "y": -10
+        }
+      },
+      {
+        "id": "christchurch",
+        "name": "Christchurch",
+        "nameZh": "基督城",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -43.5321,
+          "lng": 172.6362
+        },
+        "query": "Christchurch, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": -24,
+          "y": 26
+        }
+      },
+      {
+        "id": "timaru",
+        "name": "Timaru",
+        "nameZh": "蒂马鲁",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -44.3967,
+          "lng": 171.2536
+        },
+        "query": "Timaru, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": 24,
+          "y": -20
+        }
+      },
+      {
+        "id": "oamaru",
+        "name": "Oamaru",
+        "nameZh": "奥马鲁",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -45.0976,
+          "lng": 170.9704
+        },
+        "query": "Oamaru, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": -22,
+          "y": -18
+        }
+      },
+      {
+        "id": "katiki",
+        "name": "Katiki Point",
+        "nameZh": "Katiki Point",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -45.3986,
+          "lng": 170.8559
+        },
+        "query": "Katiki Point Lighthouse, New Zealand",
+        "overview": false,
+        "labelOffset": {
+          "x": 22,
+          "y": -18
+        }
+      },
+      {
+        "id": "dunedin",
+        "name": "Dunedin",
+        "nameZh": "但尼丁",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -45.8788,
+          "lng": 170.5028
+        },
+        "query": "Dunedin, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": 24,
+          "y": 28
+        }
+      },
+      {
+        "id": "queenstown",
+        "name": "Queenstown",
+        "nameZh": "皇后镇",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -45.0312,
+          "lng": 168.6626
+        },
+        "query": "Queenstown, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": 24,
+          "y": 28
+        }
+      },
+      {
+        "id": "arrowtown",
+        "name": "Arrowtown",
+        "nameZh": "箭镇",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -44.9417,
+          "lng": 168.835
+        },
+        "query": "Arrowtown, New Zealand",
+        "overview": false,
+        "labelOffset": {
+          "x": -22,
+          "y": -18
+        }
+      },
+      {
+        "id": "wanaka",
+        "name": "Wanaka",
+        "nameZh": "瓦纳卡",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -44.7032,
+          "lng": 169.1321
+        },
+        "query": "Wānaka, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": -24,
+          "y": -22
+        }
+      },
+      {
+        "id": "lindis-pass",
+        "name": "Lindis Pass",
+        "nameZh": "林迪斯山口",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -44.5888,
+          "lng": 169.6375
+        },
+        "query": "Lindis Pass Viewpoint, New Zealand",
+        "overview": false,
+        "labelOffset": {
+          "x": 24,
+          "y": -18
+        }
+      },
+      {
+        "id": "lake-pukaki",
+        "name": "Lake Pukaki",
+        "nameZh": "普卡基湖",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -44.1532,
+          "lng": 170.0801
+        },
+        "query": "Lake Pukaki, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": 26,
+          "y": -42
+        }
+      },
+      {
+        "id": "mt-cook",
+        "name": "Aoraki / Mount Cook",
+        "nameZh": "库克山",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -43.595,
+          "lng": 170.1418
+        },
+        "query": "Aoraki Mount Cook National Park, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": 24,
+          "y": -20
+        }
+      },
+      {
+        "id": "twizel",
+        "name": "Twizel",
+        "nameZh": "特威泽尔",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -44.2576,
+          "lng": 170.097
+        },
+        "query": "Twizel, New Zealand",
+        "overview": false,
+        "labelOffset": {
+          "x": -24,
+          "y": 30
+        }
+      },
+      {
+        "id": "lake-tekapo",
+        "name": "Lake Tekapo",
+        "nameZh": "蒂卡波湖",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -44.0047,
+          "lng": 170.4771
+        },
+        "query": "Lake Tekapo, New Zealand",
+        "overview": true,
+        "labelOffset": {
+          "x": -24,
+          "y": 44
+        }
+      },
+      {
+        "id": "fairlie",
+        "name": "Fairlie",
+        "nameZh": "Fairlie",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -44.1007,
+          "lng": 170.828
+        },
+        "query": "Fairlie Bakehouse, Fairlie, New Zealand",
+        "overview": false,
+        "labelOffset": {
+          "x": 24,
+          "y": 28
+        }
+      },
+      {
+        "id": "rakaia-gorge",
+        "name": "Rakaia Gorge",
+        "nameZh": "Rakaia Gorge",
+        "countryCode": "NZ",
+        "mapRegionId": "new-zealand",
+        "geo": {
+          "lat": -43.574,
+          "lng": 171.655
+        },
+        "query": "Rakaia Gorge Scenic Lookout, New Zealand",
+        "overview": false,
+        "labelOffset": {
+          "x": 24,
+          "y": 28
+        }
+      }
+    ],
+    "routes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "sin-airport",
+          "bencoolen"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "bencoolen",
+          "yakun",
+          "national-gallery",
+          "merlion",
+          "clarke-quay",
+          "fort-canning",
+          "sin-airport"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 12,
+        "placeIds": [
+          "sin-airport",
+          "jewel"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 13,
+        "placeIds": [
+          "jewel",
+          "sin-airport"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "chc-airport",
+          "christchurch",
+          "timaru"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "timaru",
+          "oamaru",
+          "katiki",
+          "dunedin"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 5,
+        "placeIds": [
+          "dunedin",
+          "queenstown"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 8,
+        "placeIds": [
+          "queenstown",
+          "arrowtown",
+          "wanaka"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 9,
+        "placeIds": [
+          "wanaka",
+          "lindis-pass",
+          "lake-pukaki",
+          "mt-cook",
+          "twizel"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 10,
+        "placeIds": [
+          "twizel",
+          "lake-tekapo"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 11,
+        "placeIds": [
+          "lake-tekapo",
+          "fairlie",
+          "rakaia-gorge",
+          "christchurch"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 12,
+        "placeIds": [
+          "christchurch",
+          "chc-airport"
+        ],
+        "scheduleItems": []
+      }
+    ],
+    "dailyRoutes": [
+      {
+        "day": 1,
+        "placeIds": [
+          "sin-airport",
+          "bencoolen"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 2,
+        "placeIds": [
+          "bencoolen",
+          "yakun",
+          "national-gallery",
+          "merlion",
+          "clarke-quay",
+          "fort-canning",
+          "sin-airport"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 12,
+        "placeIds": [
+          "sin-airport",
+          "jewel"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 13,
+        "placeIds": [
+          "jewel",
+          "sin-airport"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 3,
+        "placeIds": [
+          "chc-airport",
+          "christchurch",
+          "timaru"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "timaru",
+          "oamaru",
+          "katiki",
+          "dunedin"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 5,
+        "placeIds": [
+          "dunedin",
+          "queenstown"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 8,
+        "placeIds": [
+          "queenstown",
+          "arrowtown",
+          "wanaka"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 9,
+        "placeIds": [
+          "wanaka",
+          "lindis-pass",
+          "lake-pukaki",
+          "mt-cook",
+          "twizel"
+        ],
+        "scheduleItems": [],
+        "labelOffsets": {
+          "twizel": {
+            "x": 24,
+            "y": -22
+          }
+        }
+      },
+      {
+        "day": 10,
+        "placeIds": [
+          "twizel",
+          "lake-tekapo"
+        ],
+        "scheduleItems": []
+      },
+      {
+        "day": 11,
+        "placeIds": [
+          "lake-tekapo",
+          "fairlie",
+          "rakaia-gorge",
+          "christchurch"
+        ],
+        "scheduleItems": [],
+        "labelOffsets": {
+          "rakaia-gorge": {
+            "x": -24,
+            "y": -30
+          }
+        }
+      },
+      {
+        "day": 12,
+        "placeIds": [
+          "christchurch",
+          "chc-airport"
+        ],
+        "scheduleItems": []
+      }
+    ]
+  },
+  "routeMap": {
+    "defaultRegionId": "new-zealand",
+    "regions": [
+      {
+        "id": "singapore",
+        "label": "新加坡",
+        "countryCode": "SG",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "upland-basin",
+        "mapModeReason": "dense-place-cluster",
+        "mapModeMetrics": {
+          "placeCount": 8,
+          "geoPlaceCount": 8,
+          "widthKm": 16.09,
+          "heightKm": 8.61,
+          "spanKm": 18.09,
+          "averageNearestKm": 0.42,
+          "components": 1,
+          "largestLegKm": 17.92,
+          "jumpRatio": 17.92
+        },
+        "days": [
+          1,
+          2,
+          12,
+          13
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-06-upland-basin.webp",
+        "title": "新加坡 · 旅行路线",
+        "ariaLabel": "新加坡模板化旅行路线示意图，共4天",
+        "description": "樟宜机场、Bencoolen、市区步行与返程转机的城市路线示意。",
+        "disclaimer": "本图为旅行路线示意；新加坡为城市停留，新西兰南岛为自驾路线。实际导航请以当天 Google Maps 为准。",
+        "heading": {
+          "text": "SINGAPORE / 中转停留",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 1,
+            "color": "#397dc1",
+            "placeIds": [
+              "sin-airport",
+              "bencoolen"
+            ],
+            "paths": [
+              "M1169.54 321.9 C962.0 430.0 744.1 509.9 528.75 556.93"
+            ],
+            "overviewPaths": [
+              "M1169.54 321.9 C962.0 430.0 744.1 509.9 528.75 556.93"
+            ]
+          },
+          {
+            "day": 2,
+            "color": "#e77e22",
+            "placeIds": [
+              "bencoolen",
+              "yakun",
+              "national-gallery",
+              "merlion",
+              "clarke-quay",
+              "fort-canning",
+              "sin-airport"
+            ],
+            "paths": [
+              "M528.75 556.93 C559.5 575.1 592.8 583.4 626.49 581.52 C621.3 643.9 599.6 699.9 562.79 746.23 C596.1 735.1 623.8 715.8 644.2 689.46 C587.3 708.6 529.7 710.8 474.86 695.9 C508.1 687.2 536.4 670.1 558.01 645.72 C751.9 509.1 959.8 399.0 1169.54 321.9"
+            ],
+            "overviewPaths": [
+              "M528.75 556.93 C559.5 575.1 592.8 583.4 626.49 581.52 C621.3 643.9 599.6 699.9 562.79 746.23 C596.1 735.1 623.8 715.8 644.2 689.46 C587.3 708.6 529.7 710.8 474.86 695.9 C508.1 687.2 536.4 670.1 558.01 645.72 C751.9 509.1 959.8 399.0 1169.54 321.9"
+            ]
+          },
+          {
+            "day": 12,
+            "color": "#df6185",
+            "placeIds": [
+              "sin-airport",
+              "jewel"
+            ],
+            "paths": [
+              "M1169.54 321.9 C1147.0 348.1 1133.3 378.4 1129.31 410.85"
+            ],
+            "overviewPaths": [
+              "M1169.54 321.9 C1147.0 348.1 1133.3 378.4 1129.31 410.85"
+            ]
+          },
+          {
+            "day": 13,
+            "color": "#397dc1",
+            "placeIds": [
+              "jewel",
+              "sin-airport"
+            ],
+            "paths": [
+              "M1129.31 410.85 C1134.1 376.6 1147.8 346.3 1169.54 321.9"
+            ],
+            "overviewPaths": [
+              "M1129.31 410.85 C1134.1 376.6 1147.8 346.3 1169.54 321.9"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "sin-airport",
+            "x": 1169.54,
+            "y": 321.9,
+            "color": "#397dc1",
+            "tx": 1145.54,
+            "ty": 303.9,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Singapore Changi Airport /",
+              "樟宜机场"
+            ],
+            "query": "Singapore Changi Airport",
+            "geo": {
+              "lat": 1.3644,
+              "lng": 103.9915
+            },
+            "days": [
+              1,
+              2,
+              12,
+              13
+            ]
+          },
+          {
+            "id": "bencoolen",
+            "x": 528.75,
+            "y": 556.93,
+            "color": "#397dc1",
+            "tx": 504.75,
+            "ty": 532.93,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Bencoolen /",
+              "明古连"
+            ],
+            "query": "Bencoolen, Singapore",
+            "geo": {
+              "lat": 1.3009,
+              "lng": 103.8522
+            },
+            "days": [
+              1,
+              2
+            ]
+          },
+          {
+            "id": "yakun",
+            "x": 626.49,
+            "y": 581.52,
+            "color": "#e77e22",
+            "tx": 650.49,
+            "ty": 553.52,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Ya Kun Kaya Toast /",
+              "亚坤"
+            ],
+            "query": "Ya Kun Kaya Toast Singapore",
+            "geo": {
+              "lat": 1.3009,
+              "lng": 103.855
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "national-gallery",
+            "x": 562.79,
+            "y": 746.23,
+            "color": "#e77e22",
+            "tx": 538.79,
+            "ty": 790.23,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "National Gallery Singapore /",
+              "新加坡国家美术馆"
+            ],
+            "query": "National Gallery Singapore",
+            "geo": {
+              "lat": 1.2903,
+              "lng": 103.8519
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "merlion",
+            "x": 644.2,
+            "y": 689.46,
+            "color": "#e77e22",
+            "tx": 672.2,
+            "ty": 665.46,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Merlion Park /",
+              "鱼尾狮公园"
+            ],
+            "query": "Merlion Park Singapore",
+            "geo": {
+              "lat": 1.2868,
+              "lng": 103.8545
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "clarke-quay",
+            "x": 474.86,
+            "y": 695.9,
+            "color": "#e77e22",
+            "tx": 498.86,
+            "ty": 729.9,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Clarke Quay /",
+              "克拉码头"
+            ],
+            "query": "Clarke Quay Singapore",
+            "geo": {
+              "lat": 1.2906,
+              "lng": 103.8465
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "fort-canning",
+            "x": 558.01,
+            "y": 645.72,
+            "color": "#e77e22",
+            "tx": 534.01,
+            "ty": 617.72,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Fort Canning Park /",
+              "福康宁公园"
+            ],
+            "query": "Fort Canning Park Singapore",
+            "geo": {
+              "lat": 1.294,
+              "lng": 103.8465
+            },
+            "days": [
+              2
+            ]
+          },
+          {
+            "id": "jewel",
+            "x": 1129.31,
+            "y": 410.85,
+            "color": "#df6185",
+            "tx": 1105.31,
+            "ty": 392.85,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Jewel Changi /",
+              "星耀樟宜"
+            ],
+            "query": "Jewel Changi Airport Singapore",
+            "geo": {
+              "lat": 1.3602,
+              "lng": 103.9896
+            },
+            "days": [
+              12,
+              13
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "sin-airport",
+          "bencoolen",
+          "yakun",
+          "national-gallery",
+          "merlion",
+          "clarke-quay",
+          "fort-canning",
+          "jewel"
+        ],
+        "dailyLayouts": {
+          "1": {
+            "places": [
+              "sin-airport",
+              "bencoolen"
+            ],
+            "labels": {
+              "sin-airport": {
+                "x": 1145.54,
+                "y": 303.9,
+                "anchor": "end"
+              },
+              "bencoolen": {
+                "x": 504.75,
+                "y": 532.93,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 849.14,
+                "y": 439.41
+              }
+            ]
+          },
+          "2": {
+            "places": [
+              "bencoolen",
+              "yakun",
+              "national-gallery",
+              "merlion",
+              "clarke-quay",
+              "fort-canning",
+              "sin-airport"
+            ],
+            "labels": {
+              "bencoolen": {
+                "x": 504.75,
+                "y": 532.93,
+                "anchor": "end"
+              },
+              "yakun": {
+                "x": 650.49,
+                "y": 553.52,
+                "anchor": "start"
+              },
+              "national-gallery": {
+                "x": 538.79,
+                "y": 790.23,
+                "anchor": "end"
+              },
+              "merlion": {
+                "x": 672.2,
+                "y": 665.46,
+                "anchor": "start"
+              },
+              "clarke-quay": {
+                "x": 498.86,
+                "y": 729.9,
+                "anchor": "start"
+              },
+              "fort-canning": {
+                "x": 534.01,
+                "y": 617.72,
+                "anchor": "end"
+              },
+              "sin-airport": {
+                "x": 1145.54,
+                "y": 303.9,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 577.62,
+                "y": 569.22
+              },
+              {
+                "items": [],
+                "x": 594.64,
+                "y": 663.88
+              },
+              {
+                "items": [],
+                "x": 603.5,
+                "y": 717.85
+              },
+              {
+                "items": [],
+                "x": 559.53,
+                "y": 692.68
+              },
+              {
+                "items": [],
+                "x": 516.43,
+                "y": 670.81
+              },
+              {
+                "items": [],
+                "x": 863.77,
+                "y": 483.81
+              }
+            ]
+          },
+          "12": {
+            "places": [
+              "sin-airport",
+              "jewel"
+            ],
+            "labels": {
+              "sin-airport": {
+                "x": 1145.54,
+                "y": 303.9,
+                "anchor": "end"
+              },
+              "jewel": {
+                "x": 1105.31,
+                "y": 392.85,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1149.42,
+                "y": 366.38
+              }
+            ]
+          },
+          "13": {
+            "places": [
+              "jewel",
+              "sin-airport"
+            ],
+            "labels": {
+              "jewel": {
+                "x": 1105.31,
+                "y": 392.85,
+                "anchor": "end"
+              },
+              "sin-airport": {
+                "x": 1145.54,
+                "y": 303.9,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1149.42,
+                "y": 366.38
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "new-zealand",
+        "label": "新西兰南岛",
+        "countryCode": "NZ",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "broad-riverland",
+        "mapModeReason": "separated-clusters-or-long-jump",
+        "mapModeMetrics": {
+          "placeCount": 16,
+          "geoPlaceCount": 16,
+          "widthKm": 315.02,
+          "heightKm": 265.22,
+          "spanKm": 357.5,
+          "averageNearestKm": 32.15,
+          "components": 1,
+          "largestLegKm": 171.71,
+          "jumpRatio": 2.87
+        },
+        "days": [
+          3,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-10-broad-riverland.webp",
+        "title": "新西兰南岛 · 旅行路线",
+        "ariaLabel": "新西兰南岛模板化旅行路线示意图，共8天",
+        "description": "基督城取还车，途经 Timaru、Oamaru、Dunedin、Queenstown、Wanaka、Aoraki / Mount Cook 与 Lake Tekapo。",
+        "disclaimer": "本图为旅行路线示意；新加坡为城市停留，新西兰南岛为自驾路线。实际导航请以当天 Google Maps 为准。",
+        "heading": {
+          "text": "NEW ZEALAND / 南岛自驾",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 3,
+            "color": "#618344",
+            "placeIds": [
+              "chc-airport",
+              "christchurch",
+              "timaru"
+            ],
+            "paths": [
+              "M1047.77 192.68 C1080.7 200.6 1108.9 216.8 1130.64 240.32 C1013.0 289.0 913.1 362.0 836.78 454.87"
+            ],
+            "overviewPaths": [
+              "M1047.77 192.68 C1080.7 200.6 1108.9 216.8 1130.64 240.32 C1013.0 289.0 913.1 362.0 836.78 454.87"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "timaru",
+              "oamaru",
+              "katiki",
+              "dunedin"
+            ],
+            "paths": [
+              "M836.78 454.87 C800.8 510.1 782.6 570.7 783.28 633.02 C784.0 668.0 775.2 700.4 757.38 728.36 C723.1 762.9 700.9 804.0 692.03 849.2"
+            ],
+            "overviewPaths": [
+              "M836.78 454.87 C800.8 510.1 782.6 570.7 783.28 633.02 C773.9 715.6 742.8 789.1 692.03 849.2"
+            ]
+          },
+          {
+            "day": 5,
+            "color": "#8865a5",
+            "placeIds": [
+              "dunedin",
+              "queenstown"
+            ],
+            "paths": [
+              "M692.03 849.2 C546.8 803.2 416.0 731.0 307.42 636.71"
+            ],
+            "overviewPaths": [
+              "M692.03 849.2 C546.8 803.2 416.0 731.0 307.42 636.71"
+            ]
+          },
+          {
+            "day": 8,
+            "color": "#e77e22",
+            "placeIds": [
+              "queenstown",
+              "arrowtown",
+              "wanaka"
+            ],
+            "paths": [
+              "M307.42 636.71 C341.3 635.4 372.2 625.0 398.13 606.2 C401.0 571.4 413.1 540.2 433.64 514.29"
+            ],
+            "overviewPaths": [
+              "M307.42 636.71 C362.6 607.7 405.5 566.1 433.64 514.29"
+            ]
+          },
+          {
+            "day": 9,
+            "color": "#618344",
+            "placeIds": [
+              "wanaka",
+              "lindis-pass",
+              "lake-pukaki",
+              "mt-cook",
+              "twizel"
+            ],
+            "paths": [
+              "M433.64 514.29 C466.3 500.9 500.0 497.4 532.75 504.05 C565.5 460.4 583.9 411.3 586.76 359.72 C587.1 315.0 599.4 274.0 623.14 239.01 C603.6 310.0 604.9 380.7 626.91 446.84"
+            ],
+            "overviewPaths": [
+              "M433.64 514.29 C470.2 446.4 522.3 393.9 586.76 359.72 C611.2 322.3 623.6 281.3 623.14 239.01 C645.2 309.3 646.5 380.0 626.91 446.84"
+            ]
+          },
+          {
+            "day": 10,
+            "color": "#209aaa",
+            "placeIds": [
+              "twizel",
+              "lake-tekapo"
+            ],
+            "paths": [
+              "M626.91 446.84 C656.6 415.1 675.4 377.9 682.13 337.32"
+            ],
+            "overviewPaths": [
+              "M626.91 446.84 C656.6 415.1 675.4 377.9 682.13 337.32"
+            ]
+          },
+          {
+            "day": 11,
+            "color": "#8865a5",
+            "placeIds": [
+              "lake-tekapo",
+              "fairlie",
+              "rakaia-gorge",
+              "christchurch"
+            ],
+            "paths": [
+              "M682.13 337.32 C716.4 343.5 746.2 358.4 769.95 381.22 C833.0 345.2 881.3 294.9 911.89 233.4 C987.0 213.9 1061.3 216.2 1130.64 240.32"
+            ],
+            "overviewPaths": [
+              "M682.13 337.32 C828.3 275.0 980.8 242.0 1130.64 240.32"
+            ]
+          },
+          {
+            "day": 12,
+            "color": "#df6185",
+            "placeIds": [
+              "christchurch",
+              "chc-airport"
+            ],
+            "paths": [
+              "M1130.64 240.32 C1107.2 215.8 1079.1 199.6 1047.77 192.68"
+            ],
+            "overviewPaths": [
+              "M1130.64 240.32 C1107.2 215.8 1079.1 199.6 1047.77 192.68"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "chc-airport",
+            "x": 1047.77,
+            "y": 192.68,
+            "color": "#618344",
+            "tx": 1071.77,
+            "ty": 182.68,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Christchurch Airport /",
+              "基督城机场"
+            ],
+            "query": "Christchurch Airport, New Zealand",
+            "geo": {
+              "lat": -43.4894,
+              "lng": 172.5322
+            },
+            "days": [
+              3,
+              12
+            ]
+          },
+          {
+            "id": "christchurch",
+            "x": 1130.64,
+            "y": 240.32,
+            "color": "#618344",
+            "tx": 1106.64,
+            "ty": 266.32,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Christchurch /",
+              "基督城"
+            ],
+            "query": "Christchurch, New Zealand",
+            "geo": {
+              "lat": -43.5321,
+              "lng": 172.6362
+            },
+            "days": [
+              3,
+              11,
+              12
+            ]
+          },
+          {
+            "id": "timaru",
+            "x": 836.78,
+            "y": 454.87,
+            "color": "#618344",
+            "tx": 860.78,
+            "ty": 434.87,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Timaru /",
+              "蒂马鲁"
+            ],
+            "query": "Timaru, New Zealand",
+            "geo": {
+              "lat": -44.3967,
+              "lng": 171.2536
+            },
+            "days": [
+              3,
+              4
+            ]
+          },
+          {
+            "id": "oamaru",
+            "x": 783.28,
+            "y": 633.02,
+            "color": "#209aaa",
+            "tx": 761.28,
+            "ty": 615.02,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Oamaru /",
+              "奥马鲁"
+            ],
+            "query": "Oamaru, New Zealand",
+            "geo": {
+              "lat": -45.0976,
+              "lng": 170.9704
+            },
+            "days": [
+              4
+            ]
+          },
+          {
+            "id": "katiki",
+            "x": 757.38,
+            "y": 728.36,
+            "color": "#209aaa",
+            "tx": 779.38,
+            "ty": 710.36,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Katiki Point"
+            ],
+            "query": "Katiki Point Lighthouse, New Zealand",
+            "geo": {
+              "lat": -45.3986,
+              "lng": 170.8559
+            },
+            "days": [
+              4
+            ]
+          },
+          {
+            "id": "dunedin",
+            "x": 692.03,
+            "y": 849.2,
+            "color": "#209aaa",
+            "tx": 716.03,
+            "ty": 877.2,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Dunedin /",
+              "但尼丁"
+            ],
+            "query": "Dunedin, New Zealand",
+            "geo": {
+              "lat": -45.8788,
+              "lng": 170.5028
+            },
+            "days": [
+              4,
+              5
+            ]
+          },
+          {
+            "id": "queenstown",
+            "x": 307.42,
+            "y": 636.71,
+            "color": "#8865a5",
+            "tx": 331.42,
+            "ty": 664.71,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Queenstown /",
+              "皇后镇"
+            ],
+            "query": "Queenstown, New Zealand",
+            "geo": {
+              "lat": -45.0312,
+              "lng": 168.6626
+            },
+            "days": [
+              5,
+              8
+            ]
+          },
+          {
+            "id": "arrowtown",
+            "x": 398.13,
+            "y": 606.2,
+            "color": "#e77e22",
+            "tx": 376.13,
+            "ty": 588.2,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Arrowtown /",
+              "箭镇"
+            ],
+            "query": "Arrowtown, New Zealand",
+            "geo": {
+              "lat": -44.9417,
+              "lng": 168.835
+            },
+            "days": [
+              8
+            ]
+          },
+          {
+            "id": "wanaka",
+            "x": 433.64,
+            "y": 514.29,
+            "color": "#e77e22",
+            "tx": 409.64,
+            "ty": 492.29,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Wanaka /",
+              "瓦纳卡"
+            ],
+            "query": "Wānaka, New Zealand",
+            "geo": {
+              "lat": -44.7032,
+              "lng": 169.1321
+            },
+            "days": [
+              8,
+              9
+            ]
+          },
+          {
+            "id": "lindis-pass",
+            "x": 532.75,
+            "y": 504.05,
+            "color": "#618344",
+            "tx": 556.75,
+            "ty": 486.05,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Lindis Pass /",
+              "林迪斯山口"
+            ],
+            "query": "Lindis Pass Viewpoint, New Zealand",
+            "geo": {
+              "lat": -44.5888,
+              "lng": 169.6375
+            },
+            "days": [
+              9
+            ]
+          },
+          {
+            "id": "lake-pukaki",
+            "x": 586.76,
+            "y": 359.72,
+            "color": "#618344",
+            "tx": 612.76,
+            "ty": 317.72,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Lake Pukaki /",
+              "普卡基湖"
+            ],
+            "query": "Lake Pukaki, New Zealand",
+            "geo": {
+              "lat": -44.1532,
+              "lng": 170.0801
+            },
+            "days": [
+              9
+            ]
+          },
+          {
+            "id": "mt-cook",
+            "x": 623.14,
+            "y": 239.01,
+            "color": "#618344",
+            "tx": 647.14,
+            "ty": 219.01,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Aoraki / Mount Cook /",
+              "库克山"
+            ],
+            "query": "Aoraki Mount Cook National Park, New Zealand",
+            "geo": {
+              "lat": -43.595,
+              "lng": 170.1418
+            },
+            "days": [
+              9
+            ]
+          },
+          {
+            "id": "twizel",
+            "x": 626.91,
+            "y": 446.84,
+            "color": "#618344",
+            "tx": 602.91,
+            "ty": 476.84,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Twizel /",
+              "特威泽尔"
+            ],
+            "query": "Twizel, New Zealand",
+            "geo": {
+              "lat": -44.2576,
+              "lng": 170.097
+            },
+            "days": [
+              9,
+              10
+            ]
+          },
+          {
+            "id": "lake-tekapo",
+            "x": 682.13,
+            "y": 337.32,
+            "color": "#209aaa",
+            "tx": 658.13,
+            "ty": 381.32,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "Lake Tekapo /",
+              "蒂卡波湖"
+            ],
+            "query": "Lake Tekapo, New Zealand",
+            "geo": {
+              "lat": -44.0047,
+              "lng": 170.4771
+            },
+            "days": [
+              10,
+              11
+            ]
+          },
+          {
+            "id": "fairlie",
+            "x": 769.95,
+            "y": 381.22,
+            "color": "#8865a5",
+            "tx": 793.95,
+            "ty": 409.22,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Fairlie"
+            ],
+            "query": "Fairlie Bakehouse, Fairlie, New Zealand",
+            "geo": {
+              "lat": -44.1007,
+              "lng": 170.828
+            },
+            "days": [
+              11
+            ]
+          },
+          {
+            "id": "rakaia-gorge",
+            "x": 911.89,
+            "y": 233.4,
+            "color": "#8865a5",
+            "tx": 935.89,
+            "ty": 261.4,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "Rakaia Gorge"
+            ],
+            "query": "Rakaia Gorge Scenic Lookout, New Zealand",
+            "geo": {
+              "lat": -43.574,
+              "lng": 171.655
+            },
+            "days": [
+              11
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "chc-airport",
+          "christchurch",
+          "timaru",
+          "oamaru",
+          "dunedin",
+          "queenstown",
+          "wanaka",
+          "lake-pukaki",
+          "mt-cook",
+          "lake-tekapo"
+        ],
+        "dailyLayouts": {
+          "3": {
+            "places": [
+              "chc-airport",
+              "christchurch",
+              "timaru"
+            ],
+            "labels": {
+              "chc-airport": {
+                "x": 1071.77,
+                "y": 182.68,
+                "anchor": "start"
+              },
+              "christchurch": {
+                "x": 1106.64,
+                "y": 266.32,
+                "anchor": "end"
+              },
+              "timaru": {
+                "x": 860.78,
+                "y": 434.87,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1089.2,
+                "y": 216.5
+              },
+              {
+                "items": [],
+                "x": 983.71,
+                "y": 347.6
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "timaru",
+              "oamaru",
+              "katiki",
+              "dunedin"
+            ],
+            "labels": {
+              "timaru": {
+                "x": 860.78,
+                "y": 434.87,
+                "anchor": "start"
+              },
+              "oamaru": {
+                "x": 761.28,
+                "y": 615.02,
+                "anchor": "end"
+              },
+              "katiki": {
+                "x": 779.38,
+                "y": 710.36,
+                "anchor": "start"
+              },
+              "dunedin": {
+                "x": 716.03,
+                "y": 877.2,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 810.03,
+                "y": 543.94
+              },
+              {
+                "items": [],
+                "x": 770.33,
+                "y": 680.69
+              },
+              {
+                "items": [],
+                "x": 724.7,
+                "y": 788.78
+              }
+            ]
+          },
+          "5": {
+            "places": [
+              "dunedin",
+              "queenstown"
+            ],
+            "labels": {
+              "dunedin": {
+                "x": 716.03,
+                "y": 877.2,
+                "anchor": "start"
+              },
+              "queenstown": {
+                "x": 331.42,
+                "y": 664.71,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 499.73,
+                "y": 742.96
+              }
+            ]
+          },
+          "8": {
+            "places": [
+              "queenstown",
+              "arrowtown",
+              "wanaka"
+            ],
+            "labels": {
+              "queenstown": {
+                "x": 331.42,
+                "y": 664.71,
+                "anchor": "start"
+              },
+              "arrowtown": {
+                "x": 376.13,
+                "y": 588.2,
+                "anchor": "end"
+              },
+              "wanaka": {
+                "x": 409.64,
+                "y": 492.29,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 352.77,
+                "y": 621.46
+              },
+              {
+                "items": [],
+                "x": 415.88,
+                "y": 560.25
+              }
+            ]
+          },
+          "9": {
+            "places": [
+              "wanaka",
+              "lindis-pass",
+              "lake-pukaki",
+              "mt-cook",
+              "twizel"
+            ],
+            "labels": {
+              "wanaka": {
+                "x": 409.64,
+                "y": 492.29,
+                "anchor": "end"
+              },
+              "lindis-pass": {
+                "x": 556.75,
+                "y": 486.05,
+                "anchor": "start"
+              },
+              "lake-pukaki": {
+                "x": 612.76,
+                "y": 317.72,
+                "anchor": "start"
+              },
+              "mt-cook": {
+                "x": 647.14,
+                "y": 219.01,
+                "anchor": "start"
+              },
+              "twizel": {
+                "x": 650.91,
+                "y": 424.84,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 483.19,
+                "y": 509.17
+              },
+              {
+                "items": [],
+                "x": 559.75,
+                "y": 431.88
+              },
+              {
+                "items": [],
+                "x": 604.95,
+                "y": 299.37
+              },
+              {
+                "items": [],
+                "x": 625.02,
+                "y": 342.92
+              }
+            ]
+          },
+          "10": {
+            "places": [
+              "twizel",
+              "lake-tekapo"
+            ],
+            "labels": {
+              "twizel": {
+                "x": 602.91,
+                "y": 476.84,
+                "anchor": "end"
+              },
+              "lake-tekapo": {
+                "x": 658.13,
+                "y": 381.32,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 654.52,
+                "y": 392.08
+              }
+            ]
+          },
+          "11": {
+            "places": [
+              "lake-tekapo",
+              "fairlie",
+              "rakaia-gorge",
+              "christchurch"
+            ],
+            "labels": {
+              "lake-tekapo": {
+                "x": 658.13,
+                "y": 381.32,
+                "anchor": "end"
+              },
+              "fairlie": {
+                "x": 793.95,
+                "y": 409.22,
+                "anchor": "start"
+              },
+              "rakaia-gorge": {
+                "x": 887.89,
+                "y": 203.4,
+                "anchor": "end"
+              },
+              "christchurch": {
+                "x": 1106.64,
+                "y": 266.32,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 726.04,
+                "y": 359.27
+              },
+              {
+                "items": [],
+                "x": 840.92,
+                "y": 307.31
+              },
+              {
+                "items": [],
+                "x": 1021.27,
+                "y": 236.86
+              }
+            ]
+          },
+          "12": {
+            "places": [
+              "christchurch",
+              "chc-airport"
+            ],
+            "labels": {
+              "christchurch": {
+                "x": 1106.64,
+                "y": 266.32,
+                "anchor": "end"
+              },
+              "chc-airport": {
+                "x": 1071.77,
+                "y": 182.68,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1089.2,
+                "y": 216.5
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
