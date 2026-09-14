@@ -1121,3 +1121,173 @@ body[data-active-view="ledger"] .topbar { background: rgba(250, 251, 249, .93); 
     font-size: 18px;
   }
 }
+
+/* Mobile ledger polish: pin bill actions and keep edit dialogs centered. */
+@media (max-width: 520px) {
+  .ledger-bill-row {
+    position: relative;
+    min-height: 104px;
+    padding: 12px 96px 12px 12px;
+  }
+
+  .ledger-bill-title-row > div {
+    min-width: 0;
+  }
+
+  .ledger-bill-title-row h3 {
+    max-width: 100%;
+  }
+
+  .ledger-simple-actions {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ledger-simple-actions .ledger-text-button {
+    min-width: 34px;
+    min-height: 28px;
+    padding-inline: 8px;
+    border-radius: 999px;
+    font-size: 10px;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .ledger-edit-dialog {
+    width: min(calc(100vw - 28px), 430px);
+    max-height: min(86dvh, 720px);
+    margin: auto;
+    border-radius: 18px;
+  }
+
+  .ledger-edit-dialog .ledger-dialog-header {
+    align-items: center;
+    min-height: 76px;
+    padding: 16px 16px 13px;
+  }
+
+  .ledger-edit-dialog .ledger-dialog-header h2 {
+    margin-top: 3px;
+    font-size: 25px;
+    line-height: 1.05;
+    letter-spacing: 0;
+  }
+
+  .ledger-edit-dialog .ledger-dialog-close {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+    border: 2px solid rgba(40,123,144,.62);
+    color: #607174;
+    background: #f8fbfa;
+    font-size: 28px;
+    box-shadow: none;
+  }
+
+  .ledger-edit-dialog .ledger-dialog-body {
+    max-height: calc(min(86dvh, 720px) - 76px);
+    padding: 14px 14px calc(16px + var(--safe-bottom));
+  }
+
+  .ledger-edit-dialog .ledger-simple-amount {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .ledger-edit-dialog .ledger-simple-form .ledger-select,
+  .ledger-edit-dialog .ledger-simple-form .ledger-amount-input,
+  .ledger-edit-dialog .ledger-note-field .ledger-input,
+  .ledger-edit-dialog .ledger-date-field .ledger-input {
+    min-height: 44px;
+    border-radius: 12px;
+  }
+
+  .ledger-edit-dialog .ledger-simple-form .ledger-amount-input {
+    font-size: 22px;
+  }
+
+  .ledger-edit-dialog .ledger-fieldset {
+    margin-top: 13px;
+  }
+
+  .ledger-edit-dialog .ledger-category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .ledger-edit-dialog .ledger-category-choice,
+  .ledger-edit-dialog .ledger-person-group-choice {
+    min-height: 40px;
+    border-radius: 12px;
+    font-size: 11px;
+  }
+
+  .ledger-edit-dialog .ledger-person-group-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .ledger-edit-dialog .ledger-note-field,
+  .ledger-edit-dialog .ledger-date-field {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding-top: 12px;
+  }
+
+  .ledger-edit-dialog .ledger-primary-button {
+    min-height: 46px;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .ledger-bill-row {
+    padding-right: 88px;
+  }
+
+  .ledger-simple-actions {
+    right: 10px;
+    gap: 5px;
+  }
+
+  .ledger-simple-actions .ledger-text-button {
+    min-width: 31px;
+    min-height: 27px;
+    padding-inline: 7px;
+    font-size: 9px;
+  }
+
+  .ledger-edit-dialog {
+    width: calc(100vw - 24px);
+    max-height: 84dvh;
+  }
+
+  .ledger-edit-dialog .ledger-dialog-header {
+    min-height: 70px;
+    padding: 14px 14px 11px;
+  }
+
+  .ledger-edit-dialog .ledger-dialog-header h2 {
+    font-size: 23px;
+  }
+
+  .ledger-edit-dialog .ledger-dialog-close {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+    font-size: 25px;
+  }
+
+  .ledger-edit-dialog .ledger-dialog-body {
+    max-height: calc(84dvh - 70px);
+    padding-inline: 12px;
+  }
+}
