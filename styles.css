@@ -875,3 +875,106 @@ button:focus-visible,a:focus-visible {outline:2px solid var(--lake);outline-offs
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* Mobile correction: keep action controls on one line and delete buttons attached to their text rows. */
+@media (max-width: 520px) {
+  .schedule-card__topline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    max-width: none;
+    overflow: hidden;
+  }
+
+  .schedule-status-badge {
+    flex: 0 0 auto;
+    min-height: 28px;
+    padding-inline: 9px;
+    font-size: 10px;
+  }
+
+  .schedule-card__actions {
+    width: auto;
+    min-width: 0;
+    flex: 0 1 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 4px;
+  }
+
+  .schedule-card__actions button {
+    min-width: 30px;
+    min-height: 28px;
+    padding-inline: 7px;
+    flex: 0 0 auto;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .schedule-card__actions button[data-move-schedule] {
+    width: 30px;
+    padding-inline: 0;
+  }
+
+  .drive-note-panel li {
+    grid-template-columns: minmax(0, 1fr) 54px;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .drive-note-panel li button {
+    width: 54px;
+    justify-self: end;
+    padding-inline: 0;
+  }
+
+  .todo-item {
+    grid-template-columns: minmax(0, 1fr) 54px;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .todo-item label {
+    min-width: 0;
+    min-height: 44px;
+  }
+
+  .todo-text {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .todo-delete {
+    width: 54px;
+    justify-self: end;
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .schedule-card__topline {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .schedule-card__actions {
+    width: auto;
+  }
+
+  .schedule-status-badge {
+    padding-inline: 8px;
+  }
+
+  .schedule-card__actions button {
+    min-width: 29px;
+    padding-inline: 6px;
+  }
+
+  .schedule-card__actions button[data-move-schedule] {
+    width: 29px;
+  }
+}
