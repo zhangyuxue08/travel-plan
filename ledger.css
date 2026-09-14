@@ -736,3 +736,287 @@ body[data-active-view="ledger"] .topbar { background: rgba(250, 251, 249, .93); 
     justify-content: flex-start;
   }
 }
+
+/* Phone layout: compact ledger cards and a navigation menu that no longer covers headings. */
+@media (max-width: 520px) {
+  .topbar {
+    z-index: 50;
+  }
+
+  .topbar .primary-navigation {
+    gap: 2px;
+  }
+
+  .travel-navigation-menu {
+    z-index: 49;
+    top: calc(52px + var(--safe-top));
+    left: 10px;
+    right: 10px;
+    width: calc(100vw - 20px);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    padding: 8px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(19,38,47,.12);
+  }
+
+  .topbar .travel-navigation-menu a {
+    min-height: 38px;
+    padding-inline: 4px;
+    border-radius: 8px;
+    font-size: 10px;
+  }
+
+  body.is-travel-menu-open .ledger-app,
+  body.is-travel-menu-open .section:first-of-type {
+    padding-top: 118px;
+  }
+
+  .ledger-app {
+    padding: 24px 14px calc(56px + var(--safe-bottom));
+  }
+
+  .ledger-page-header {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .ledger-page-header h1 {
+    font-size: clamp(29px, 10vw, 38px);
+    line-height: 1.05;
+    letter-spacing: 0;
+  }
+
+  .ledger-header-actions {
+    flex: 0 0 auto;
+  }
+
+  .ledger-icon-button {
+    min-height: 42px;
+    padding-inline: 12px;
+    font-size: 11px;
+  }
+
+  .ledger-simple-totals {
+    margin-top: 20px;
+    padding: 10px;
+    gap: 9px;
+    border-radius: 17px;
+  }
+
+  .ledger-simple-totals > div {
+    min-height: 0;
+    padding: 12px;
+    border-radius: 13px;
+  }
+
+  .ledger-simple-totals strong {
+    font-size: 28px;
+    line-height: 1.05;
+  }
+
+  .ledger-simple-totals span {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .ledger-total-amounts {
+    justify-content: flex-start;
+    gap: 7px;
+  }
+
+  .ledger-total-amount {
+    min-width: 0;
+    width: fit-content;
+    justify-items: start;
+    padding: 8px 10px;
+    border-radius: 12px;
+  }
+
+  .ledger-total-amount strong {
+    font-size: 24px;
+  }
+
+  .ledger-total-amount em {
+    font-size: 9px;
+  }
+
+  .ledger-entry-card {
+    margin-top: 22px;
+    padding: 16px 14px;
+    border-radius: 15px;
+  }
+
+  .ledger-section-heading h2 {
+    font-size: 24px;
+    line-height: 1.1;
+    letter-spacing: 0;
+  }
+
+  .ledger-bill-form {
+    margin-top: 16px;
+  }
+
+  .ledger-simple-amount {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .ledger-simple-form .ledger-select,
+  .ledger-simple-form .ledger-amount-input,
+  .ledger-note-field .ledger-input,
+  .ledger-date-field .ledger-input {
+    min-height: 44px;
+    border-radius: 12px;
+  }
+
+  .ledger-simple-form .ledger-amount-input {
+    font-size: 22px;
+  }
+
+  .ledger-fieldset {
+    margin-top: 14px;
+  }
+
+  .ledger-category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .ledger-category-choice,
+  .ledger-person-group-choice {
+    min-height: 40px;
+    font-size: 11px;
+  }
+
+  .ledger-person-group-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .ledger-note-field,
+  .ledger-date-field {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding-top: 12px;
+  }
+
+  .ledger-primary-button {
+    min-height: 46px;
+  }
+
+  .ledger-list-section {
+    max-width: 100%;
+    margin-top: 26px;
+  }
+
+  .ledger-list-heading {
+    padding: 0 4px 12px;
+  }
+
+  .ledger-bill-row {
+    gap: 10px;
+    padding: 14px;
+    border-radius: 15px;
+  }
+
+  .ledger-bill-main {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .ledger-bill-title-row {
+    gap: 9px;
+  }
+
+  .ledger-bill-title-row h3 {
+    max-width: none;
+    font-size: 17px;
+    line-height: 1.3;
+  }
+
+  .ledger-bill-title-row p {
+    margin-top: 8px;
+    gap: 6px;
+  }
+
+  .ledger-meta-chip {
+    min-height: 22px;
+    padding-inline: 8px;
+    font-size: 10px;
+  }
+
+  .ledger-bill-amount {
+    min-width: 0;
+    padding-left: 19px;
+    justify-items: start;
+    text-align: left;
+  }
+
+  .ledger-bill-amount strong {
+    font-size: 23px;
+    line-height: 1.05;
+  }
+
+  .ledger-simple-actions {
+    justify-content: flex-start;
+    gap: 8px;
+    padding-left: 19px;
+  }
+
+  .ledger-simple-actions .ledger-text-button {
+    min-height: 32px;
+    padding-inline: 10px;
+  }
+
+  .ledger-edit-dialog {
+    width: 100%;
+    max-height: 94dvh;
+    margin: auto 0 0;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .ledger-edit-dialog .ledger-dialog-body {
+    padding: 16px 14px calc(18px + var(--safe-bottom));
+  }
+}
+
+@media (max-width: 420px) {
+  .ledger-app {
+    padding-inline: 12px;
+  }
+
+  .ledger-page-header h1 {
+    font-size: clamp(28px, 9.6vw, 34px);
+  }
+
+  .ledger-icon-button {
+    min-height: 38px;
+    padding-inline: 11px;
+  }
+
+  .ledger-simple-totals {
+    grid-template-columns: 1fr;
+  }
+
+  .ledger-total-amounts {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .ledger-total-amount {
+    width: 100%;
+  }
+
+  .ledger-total-amount strong {
+    font-size: 22px;
+  }
+
+  .ledger-bill-title-row h3 {
+    font-size: 16px;
+  }
+
+  .ledger-bill-amount strong {
+    font-size: 22px;
+  }
+}

@@ -556,3 +556,322 @@ button:focus-visible,a:focus-visible {outline:2px solid var(--lake);outline-offs
   .is-daily .transport-pin svg {width:13px;height:13px;}
   #map-dialog-content .daily-fullscreen {width:100%;min-width:0;}
 }
+
+/* Mobile reading pass: keep desktop airy, but make phone screens dense and predictable. */
+@media (max-width: 520px) {
+  .section {
+    padding: 32px 16px;
+    scroll-margin-top: calc(58px + var(--safe-top));
+  }
+
+  .section-heading {
+    margin-bottom: 14px;
+    gap: 10px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(26px, 9vw, 36px);
+    line-height: 1.05;
+    letter-spacing: 0;
+  }
+
+  .section-kicker {
+    margin-bottom: 7px;
+    font-size: 10px;
+    letter-spacing: .14em;
+  }
+
+  .timeline::before {
+    left: 12px;
+  }
+
+  .day-card {
+    padding-left: 31px;
+    scroll-margin-top: calc(64px + var(--safe-top));
+  }
+
+  .day-dot {
+    left: 6px;
+    top: 25px;
+    width: 12px;
+    height: 12px;
+    border-width: 3px;
+  }
+
+  .day-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: start;
+    gap: 8px;
+    min-height: 0;
+    padding: 13px 0 15px;
+  }
+
+  .day-toggle {
+    min-height: 0;
+    padding: 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+  }
+
+  .day-meta {
+    display: block;
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .day-title {
+    display: block;
+    margin-top: 5px;
+    font-size: clamp(19px, 6.6vw, 26px);
+    line-height: 1.22;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .day-locations {
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .day-chevron {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 36px;
+    height: 36px;
+    background: rgba(255,255,255,.56);
+  }
+
+  .day-cost-summary {
+    padding-right: 44px;
+    gap: 4px;
+  }
+
+  .day-cost-summary span {
+    font-size: 10px;
+    line-height: 1.35;
+  }
+
+  .day-edit-button {
+    grid-column: 1 / -1;
+    justify-self: start;
+    min-height: 32px;
+    margin: 6px 0 0;
+    padding-inline: 12px;
+    font-size: 10px;
+  }
+
+  .day-detail {
+    padding: 16px 0 24px;
+  }
+
+  .day-detail-actions {
+    margin: 0 0 14px;
+  }
+
+  .day-detail-actions button {
+    min-height: 34px;
+    padding-inline: 13px;
+    font-size: 11px;
+  }
+
+  .schedule-item {
+    padding-left: 52px;
+    padding-bottom: 18px;
+  }
+
+  .schedule-item::before {
+    left: 42px;
+  }
+
+  .schedule-item::after {
+    left: 38px;
+    width: 9px;
+    height: 9px;
+  }
+
+  .schedule-time {
+    width: 34px;
+    font-size: 9px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .schedule-card {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .schedule-card__head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .schedule-card__title {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .schedule-card__icon {
+    min-width: 22px;
+    max-width: 30px;
+  }
+
+  .schedule-card__title strong {
+    font-size: 16px;
+    line-height: 1.32;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .schedule-card__title em {
+    font-size: 11px;
+    line-height: 1.45;
+  }
+
+  .schedule-card__topline {
+    width: 100%;
+    max-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .schedule-status-badge {
+    min-height: 30px;
+    padding-inline: 10px;
+  }
+
+  .schedule-card__actions {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    gap: 5px;
+  }
+
+  .schedule-card__actions button {
+    min-width: 34px;
+    min-height: 30px;
+    padding-inline: 9px;
+  }
+
+  .schedule-card__meta,
+  .schedule-costs,
+  .schedule-card__note,
+  .schedule-map-links {
+    margin-top: 8px;
+  }
+
+  .schedule-card__note {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .drive-note-tabs button {
+    min-height: 44px;
+    padding-block: 9px;
+    font-size: 12px;
+  }
+
+  .drive-note-form,
+  .todo-form {
+    grid-template-columns: 1fr;
+  }
+
+  .drive-note-form button,
+  .todo-form button {
+    justify-self: stretch;
+  }
+
+  .drive-note-panel li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 7px;
+    padding: 13px 0 13px 14px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .drive-note-panel li button {
+    justify-self: end;
+    min-height: 30px;
+    padding-inline: 11px;
+  }
+
+  .todo-tabs {
+    gap: 6px;
+  }
+
+  .todo-tab {
+    min-height: 44px;
+    border-radius: 12px;
+  }
+
+  .todo-tab span {
+    font-size: 14px;
+  }
+
+  .todo-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+    padding: 8px 0;
+  }
+
+  .todo-item label {
+    min-height: 38px;
+  }
+
+  .todo-delete {
+    justify-self: end;
+    min-height: 30px;
+    padding-inline: 11px;
+  }
+}
+
+@media (max-width: 420px) {
+  .section {
+    padding-inline: 14px;
+  }
+
+  .day-card {
+    padding-left: 28px;
+  }
+
+  .day-title {
+    padding-right: 42px;
+    font-size: clamp(18px, 6.2vw, 24px);
+  }
+
+  .schedule-item {
+    padding-left: 45px;
+  }
+
+  .schedule-item::before {
+    left: 36px;
+  }
+
+  .schedule-item::after {
+    left: 32px;
+  }
+
+  .schedule-time {
+    width: 29px;
+    font-size: 8px;
+  }
+
+  .schedule-card__topline {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .schedule-card__actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .todo-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

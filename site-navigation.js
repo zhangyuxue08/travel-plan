@@ -99,6 +99,12 @@
     activeView = viewForHash(location.hash);
     routeFromLocation({ restore: false, forceScroll: true });
 
+    const syncTravelMenuState = () => {
+      document.body.classList.toggle("is-travel-menu-open", Boolean(travelMenu?.open));
+    };
+    travelMenu?.addEventListener("toggle", syncTravelMenuState);
+    syncTravelMenuState();
+
     document.addEventListener("click", (event) => {
       const ledgerLink = event.target.closest("#ledger-navigation-link");
       if (ledgerLink) {
